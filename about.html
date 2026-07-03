@@ -15,18 +15,34 @@
 
 <div id="navbar-container"></div>
 
-<!-- ===== PAGE HERO ===== -->
-<section class="relative py-28 overflow-hidden" style="background:linear-gradient(135deg,#F0FDF4 0%,#DCFCE7 100%);">
-    <div class="absolute inset-0 pointer-events-none">
-        <div class="absolute w-[600px] h-[600px] rounded-full" style="background:radial-gradient(circle,rgba(5,150,105,0.08) 0%,transparent 70%);top:-200px;right:-200px;"></div>
-        <div class="absolute inset-0" style="background-image:linear-gradient(rgba(5,150,105,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(5,150,105,0.04) 1px,transparent 1px);background-size:48px 48px;"></div>
-    </div>
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-        <div class="section-tag mx-auto animate-on-scroll slide-up">
-            <i class="fas fa-info-circle text-xs"></i> About Us
+<!-- ===== PAGE BANNER ===== -->
+<section class="relative h-[340px] md:h-[420px] overflow-hidden">
+    <!-- Background image -->
+    <img
+        src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=1600&h=600&q=80"
+        alt="About MediCare Pharmacy"
+        class="absolute inset-0 w-full h-full object-cover"
+    >
+    <!-- Dark overlay -->
+    <div class="absolute inset-0" style="background:linear-gradient(135deg,rgba(4,7,5,0.72) 0%,rgba(5,150,105,0.55) 100%);"></div>
+    <!-- Breadcrumb -->
+    <div class="absolute top-6 left-0 right-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <nav class="flex items-center gap-2 text-white/60 text-xs uppercase tracking-widest font-semibold">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <i class="fas fa-chevron-right text-[8px]"></i>
+                <span class="text-white">About Us</span>
+            </nav>
         </div>
-        <h1 class="animate-on-scroll slide-up text-[#0F172A] dark:text-white" style="transition-delay:0.1s;">Your Trusted Healthcare<br><span class="green-text">Partner Since 2005</span></h1>
-        <p class="section-subtitle mx-auto text-center mt-4 animate-on-scroll slide-up" style="transition-delay:0.2s;">Two decades of serving families with genuine medicines, expert advice and compassionate care.</p>
+    </div>
+    <!-- Content -->
+    <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/25 bg-white/10 mb-4">
+            <i class="fas fa-info-circle text-white text-xs"></i>
+            <span class="text-white text-xs font-bold uppercase tracking-[0.2em]">About Us</span>
+        </div>
+        <h1 class="text-white mb-3" style="font-family:'Sora',sans-serif;text-shadow:0 2px 16px rgba(0,0,0,0.4);">Your Trusted Healthcare<br><span style="color:#34D399;">Partner Since 2005</span></h1>
+        <p class="text-white/80 text-base max-w-2xl mx-auto">Two decades of serving families with genuine medicines, expert advice and compassionate care.</p>
     </div>
 </section>
 
@@ -83,7 +99,7 @@
 </section>
 
 <!-- ===== MISSION & VALUES ===== -->
-<section class="py-24" style="background:linear-gradient(135deg,#F0FDF4 0%,#DCFCE7 100%);">
+<section class="py-24 bg-cream-gradient-simple">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-16 animate-on-scroll slide-up">
             <div class="section-tag mx-auto">
@@ -99,7 +115,7 @@
                     <i class="fas fa-heart text-[#059669] text-2xl"></i>
                 </div>
                 <h3 class="font-bold text-[#0F172A] dark:text-white mb-3 text-xl" style="font-family:'Sora',sans-serif;">Our Mission</h3>
-                <p class="text-neutral-500 dark:text-neutral-400 text-sm">To provide every patient with safe, effective and affordable medicines while offering personalized pharmacist guidance.</p>
+                <p class="text-neutral-500 dark:text-neutral-400 text-sm">To provide every patient with safe, also effective medicines while offering personalized pharmacist guidance.</p>
             </div>
 
             <div class="card p-8 text-center animate-on-scroll slide-up" style="transition-delay:0.2s;">
@@ -134,28 +150,28 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="card p-6 text-center animate-on-scroll slide-up" style="transition-delay:0.1s;">
-                <div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#059669] to-[#047857] flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" style="font-family:'Sora',sans-serif;">DR</div>
+                <img class="w-20 h-20 rounded-full object-cover border-2 border-[#D1FAE5] dark:border-[#1A3D2A] mx-auto mb-4" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=200&h=200&q=80" alt="Dr. Rajan M.">
                 <h4 class="font-bold text-[#0F172A] dark:text-white text-lg" style="font-family:'Sora',sans-serif;">Dr. Rajan M.</h4>
                 <p class="text-[#059669] text-sm font-semibold mb-2">Chief Pharmacist</p>
-                <p class="text-neutral-500 dark:text-neutral-400 text-xs">Pharm.D | 18 years experience | Specializes in chronic disease management</p>
+                <p class="text-neutral-500 dark:text-neutral-400 text-xs">Pharm.D | 18 years experience | Specializes in chronic disease</p>
             </div>
 
             <div class="card p-6 text-center animate-on-scroll slide-up" style="transition-delay:0.2s;">
-                <div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#047857] to-[#065F46] flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" style="font-family:'Sora',sans-serif;">SP</div>
+                <img class="w-20 h-20 rounded-full object-cover border-2 border-[#D1FAE5] dark:border-[#1A3D2A] mx-auto mb-4" src="https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?auto=format&fit=crop&w=200&h=200&q=80" alt="Sunita Patel">
                 <h4 class="font-bold text-[#0F172A] dark:text-white text-lg" style="font-family:'Sora',sans-serif;">Sunita Patel</h4>
                 <p class="text-[#059669] text-sm font-semibold mb-2">Senior Pharmacist</p>
                 <p class="text-neutral-500 dark:text-neutral-400 text-xs">B.Pharm | 12 years experience | Baby care & pediatric medicines specialist</p>
             </div>
 
             <div class="card p-6 text-center animate-on-scroll slide-up" style="transition-delay:0.3s;">
-                <div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#059669] to-[#047857] flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" style="font-family:'Sora',sans-serif;">AK</div>
+                <img class="w-20 h-20 rounded-full object-cover border-2 border-[#D1FAE5] dark:border-[#1A3D2A] mx-auto mb-4" src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=200&h=200&q=80" alt="Arjun Kumar">
                 <h4 class="font-bold text-[#0F172A] dark:text-white text-lg" style="font-family:'Sora',sans-serif;">Arjun Kumar</h4>
                 <p class="text-[#059669] text-sm font-semibold mb-2">Pharmacist</p>
                 <p class="text-neutral-500 dark:text-neutral-400 text-xs">M.Pharm | 8 years experience | Health devices & clinical nutrition expert</p>
             </div>
 
             <div class="card p-6 text-center animate-on-scroll slide-up" style="transition-delay:0.4s;">
-                <div class="w-20 h-20 rounded-full bg-gradient-to-br from-[#047857] to-[#065F46] flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4" style="font-family:'Sora',sans-serif;">MV</div>
+                <img class="w-20 h-20 rounded-full object-cover border-2 border-[#D1FAE5] dark:border-[#1A3D2A] mx-auto mb-4" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=200&h=200&q=80" alt="Meena Velu">
                 <h4 class="font-bold text-[#0F172A] dark:text-white text-lg" style="font-family:'Sora',sans-serif;">Meena Velu</h4>
                 <p class="text-[#059669] text-sm font-semibold mb-2">Pharmacist</p>
                 <p class="text-neutral-500 dark:text-neutral-400 text-xs">B.Pharm | 6 years experience | Ayurvedic & wellness products specialist</p>
@@ -178,7 +194,7 @@
                 <div class="text-white/60 text-xs mt-1">Govt. Certified</div>
             </div>
             <div class="text-center p-6 rounded-2xl animate-on-scroll slide-up" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);transition-delay:0.2s;">
-                <i class="fas fa-shield-check text-white text-3xl mb-3"></i>
+                <i class="fas fa-shield-halved text-white text-3xl mb-3"></i>
                 <div class="text-white font-bold text-sm">ISO Certified</div>
                 <div class="text-white/60 text-xs mt-1">Quality Management</div>
             </div>
@@ -192,6 +208,237 @@
                 <div class="text-white font-bold text-sm">AYUSH Certified</div>
                 <div class="text-white/60 text-xs mt-1">Ayurvedic Products</div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== JOURNEY / TIMELINE ===== -->
+<section class="py-24 bg-white dark:bg-[#0D2318]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16 animate-on-scroll slide-up">
+            <div class="section-tag mx-auto">
+                <i class="fas fa-timeline text-xs"></i> Our Journey
+            </div>
+            <h2 class="section-title">Two Decades of<br>Serving the Community</h2>
+            <p class="section-subtitle mx-auto text-center">Key milestones that shaped MediCare into the trusted pharmacy it is today.</p>
+        </div>
+
+        <div class="relative">
+            <!-- Vertical center line -->
+            <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2" style="background:linear-gradient(to bottom, transparent, #D1FAE5, #059669, #D1FAE5, transparent);"></div>
+
+            <div class="space-y-12">
+                <!-- 2005 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-on-scroll slide-up">
+                    <div class="md:text-right pr-8">
+                        <div class="inline-block px-4 py-1 rounded-full bg-[#059669]/10 border border-[#059669]/20 text-[#059669] font-bold text-sm mb-3">2005</div>
+                        <h4 class="font-bold text-[#0F172A] dark:text-white text-lg mb-2">Founded in Chennai</h4>
+                        <p class="text-neutral-500 dark:text-neutral-400 text-sm">Dr. Rajan M. opens MediCare's first single-counter pharmacy near City Hospital with a mission to make genuine medicines accessible to all.</p>
+                    </div>
+                    <div class="hidden md:flex items-center pl-8">
+                        <div class="w-12 h-12 rounded-2xl bg-[#059669]/10 flex items-center justify-center border border-[#059669]/20">
+                            <i class="fas fa-store text-[#059669] text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2010 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-on-scroll slide-up">
+                    <div class="hidden md:flex items-center justify-end pr-8">
+                        <div class="w-12 h-12 rounded-2xl bg-[#059669]/10 flex items-center justify-center border border-[#059669]/20">
+                            <i class="fas fa-expand text-[#059669] text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="pl-8">
+                        <div class="inline-block px-4 py-1 rounded-full bg-[#059669]/10 border border-[#059669]/20 text-[#059669] font-bold text-sm mb-3">2010</div>
+                        <h4 class="font-bold text-[#0F172A] dark:text-white text-lg mb-2">Store Expansion</h4>
+                        <p class="text-neutral-500 dark:text-neutral-400 text-sm">Expanded to a full medical store, adding health devices, baby care products and our first dedicated consultation desk with licensed pharmacists.</p>
+                    </div>
+                </div>
+
+                <!-- 2015 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-on-scroll slide-up">
+                    <div class="md:text-right pr-8">
+                        <div class="inline-block px-4 py-1 rounded-full bg-[#059669]/10 border border-[#059669]/20 text-[#059669] font-bold text-sm mb-3">2015</div>
+                        <h4 class="font-bold text-[#0F172A] dark:text-white text-lg mb-2">ISO Certification & Home Delivery</h4>
+                        <p class="text-neutral-500 dark:text-neutral-400 text-sm">Achieved ISO 9001 certification for quality management and launched our city-wide home delivery service reaching 10,000+ households.</p>
+                    </div>
+                    <div class="hidden md:flex items-center pl-8">
+                        <div class="w-12 h-12 rounded-2xl bg-[#059669]/10 flex items-center justify-center border border-[#059669]/20">
+                            <i class="fas fa-award text-[#059669] text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2020 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-on-scroll slide-up">
+                    <div class="hidden md:flex items-center justify-end pr-8">
+                        <div class="w-12 h-12 rounded-2xl bg-[#059669]/10 flex items-center justify-center border border-[#059669]/20">
+                            <i class="fas fa-file-medical text-[#059669] text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="pl-8">
+                        <div class="inline-block px-4 py-1 rounded-full bg-[#059669]/10 border border-[#059669]/20 text-[#059669] font-bold text-sm mb-3">2020</div>
+                        <h4 class="font-bold text-[#0F172A] dark:text-white text-lg mb-2">Digital Prescription Upload Launched</h4>
+                        <p class="text-neutral-500 dark:text-neutral-400 text-sm">Introduced our online prescription upload system during the pandemic, serving 5,000+ families safely from home during lockdown periods.</p>
+                    </div>
+                </div>
+
+                <!-- 2025 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-on-scroll slide-up">
+                    <div class="md:text-right pr-8">
+                        <div class="inline-block px-4 py-1 rounded-full bg-[#059669]/10 border border-[#059669]/20 text-[#059669] font-bold text-sm mb-3">2025</div>
+                        <h4 class="font-bold text-[#0F172A] dark:text-white text-lg mb-2">Premium Membership & 25K+ Customers</h4>
+                        <p class="text-neutral-500 dark:text-neutral-400 text-sm">Launched premium membership plans with priority delivery, free consultations and refill reminders. Now proudly serving over 25,000 families across the city.</p>
+                    </div>
+                    <div class="hidden md:flex items-center pl-8">
+                        <div class="w-12 h-12 rounded-2xl bg-[#059669]/10 flex items-center justify-center border border-[#059669]/20">
+                            <i class="fas fa-crown text-[#059669] text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== AWARDS & RECOGNITION ===== -->
+<section class="py-24 bg-cream-gradient-simple">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16 animate-on-scroll slide-up">
+            <div class="section-tag mx-auto">
+                <i class="fas fa-trophy text-xs"></i> Awards & Recognition
+            </div>
+            <h2 class="section-title">Recognized for<br>Healthcare Excellence</h2>
+            <p class="section-subtitle mx-auto text-center">Trusted by institutions and celebrated for our commitment to quality patient care.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="card p-6 text-center animate-on-scroll slide-up" style="transition-delay:0.1s;">
+                <div class="w-16 h-16 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-4 border border-[#059669]/20">
+                    <i class="fas fa-trophy text-[#059669] text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-2">Best Pharmacy 2023</h4>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">Awarded by the Tamil Nadu Medical Council for outstanding community service and patient care.</p>
+                <div class="mt-3 text-xs text-[#059669] font-semibold">TN Medical Council</div>
+            </div>
+
+            <div class="card p-6 text-center animate-on-scroll slide-up" style="transition-delay:0.2s;">
+                <div class="w-16 h-16 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-4 border border-[#059669]/20">
+                    <i class="fas fa-star text-[#059669] text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-2">5-Star Rating</h4>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">Consistently rated 4.9/5 on Google and health platforms by over 4,200 verified customers.</p>
+                <div class="mt-3 text-xs text-[#059669] font-semibold">Google & Practo Reviews</div>
+            </div>
+
+            <div class="card p-6 text-center animate-on-scroll slide-up" style="transition-delay:0.3s;">
+                <div class="w-16 h-16 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-4 border border-[#059669]/20">
+                    <i class="fas fa-shield-halved text-[#059669] text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-2">ISO Certified</h4>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">Internationally recognized quality management certification maintained since 2015.</p>
+                <div class="mt-3 text-xs text-[#059669] font-semibold">Quality Management</div>
+            </div>
+
+            <div class="card p-6 text-center animate-on-scroll slide-up" style="transition-delay:0.4s;">
+                <div class="w-16 h-16 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-4 border border-[#059669]/20">
+                    <i class="fas fa-hand-holding-heart text-[#059669] text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-2">Community Health</h4>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">Recognized for free medicine distribution and health camps in under-served neighborhoods.</p>
+                <div class="mt-3 text-xs text-[#059669] font-semibold">City Health Dept. 2022</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== COMMUNITY COMMITMENT ===== -->
+<section class="py-24 bg-white dark:bg-[#0D2318]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Content -->
+            <div class="animate-on-scroll slide-right">
+                <div class="section-tag">
+                    <i class="fas fa-hands-holding-child text-xs"></i> Community
+                </div>
+                <h2 class="section-title">Giving Back to<br>the Community We Serve</h2>
+                <p class="text-neutral-500 dark:text-neutral-400 mb-6">
+                    MediCare believes that healthcare is a right, not a privilege. Every year, we run free health camps, subsidized medicine programs and pharmacist education drives in underserved areas of Chennai.
+                </p>
+
+                <div class="space-y-5 mb-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-[#059669]/10 flex items-center justify-center shrink-0 mt-0.5">
+                            <i class="fas fa-hospital text-[#059669]"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-[#0F172A] dark:text-white mb-1">Annual Free Health Camps</div>
+                            <div class="text-sm text-neutral-500">Over 500 patients receive free BP, sugar and BMI screening each year through our community camps.</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-[#059669]/10 flex items-center justify-center shrink-0 mt-0.5">
+                            <i class="fas fa-hand-holding-heart text-[#059669]"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-[#0F172A] dark:text-white mb-1">Subsidized Medicines for Seniors</div>
+                            <div class="text-sm text-neutral-500">Special 20% discount for senior citizens on all prescription medicines — because they've given enough to society.</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-[#059669]/10 flex items-center justify-center shrink-0 mt-0.5">
+                            <i class="fas fa-graduation-cap text-[#059669]"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-[#0F172A] dark:text-white mb-1">Pharmacist Education Drives</div>
+                            <div class="text-sm text-neutral-500">Regular awareness drives in schools and housing societies on antibiotic resistance and safe medicine use.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats grid -->
+            <div class="animate-on-scroll slide-left">
+                <div class="grid grid-cols-2 gap-5">
+                    <div class="p-6 rounded-3xl text-center" style="background:linear-gradient(135deg,#059669,#047857);">
+                        <div class="text-3xl font-bold text-white mb-2" style="font-family:'Sora',sans-serif;" data-counter data-target="12" data-suffix="+">0+</div>
+                        <div class="text-white/80 text-sm">Health Camps<br>Organized</div>
+                    </div>
+                    <div class="p-6 rounded-3xl text-center bg-[#F0FDF4] dark:bg-[#122B1E] border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                        <div class="text-3xl font-bold text-[#059669] mb-2" style="font-family:'Sora',sans-serif;" data-counter data-target="500" data-suffix="+">0+</div>
+                        <div class="text-neutral-500 text-sm">Patients Screened<br>Per Year</div>
+                    </div>
+                    <div class="p-6 rounded-3xl text-center bg-[#F0FDF4] dark:bg-[#122B1E] border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                        <div class="text-3xl font-bold text-[#059669] mb-2" style="font-family:'Sora',sans-serif;" data-counter data-target="1000" data-suffix="+">0+</div>
+                        <div class="text-neutral-500 text-sm">Senior Citizens<br>Benefited</div>
+                    </div>
+                    <div class="p-6 rounded-3xl text-center" style="background:linear-gradient(135deg,#059669,#047857);">
+                        <div class="text-3xl font-bold text-white mb-2" style="font-family:'Sora',sans-serif;" data-counter data-target="20" data-suffix="%">0%</div>
+                        <div class="text-white/80 text-sm">Discount for<br>Senior Citizens</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ABOUT CTA ===== -->
+<section class="py-20" style="background:linear-gradient(135deg,#059669 0%,#047857 50%,#065F46 100%);">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 bg-white/10 mb-6 animate-on-scroll slide-up">
+            <i class="fas fa-heart text-white text-xs"></i>
+            <span class="text-white text-xs font-bold uppercase tracking-[0.2em]">Join Our Family</span>
+        </div>
+        <h2 class="text-white mb-4 animate-on-scroll slide-up" style="font-family:'Sora',sans-serif;">Experience the MediCare<br>Difference Today</h2>
+        <p class="text-white/75 text-lg mb-10 animate-on-scroll slide-up" style="transition-delay:0.1s;">Visit our store, call us or upload your prescription online — 25,000+ families have already chosen MediCare as their trusted healthcare partner.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll slide-up" style="transition-delay:0.2s;">
+            <a href="contact.html" class="btn btn-lg" style="background:white;color:#059669;border-radius:50px;font-weight:700;" id="about-cta-contact">
+                <i class="fas fa-phone text-sm"></i> Contact Us Today
+            </a>
+            <a href="services.html" class="btn btn-lg" style="border:2px solid white;color:white;border-radius:50px;" id="about-cta-services">
+                <i class="fas fa-grid-2 text-sm"></i> Explore Our Services
+            </a>
         </div>
     </div>
 </section>

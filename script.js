@@ -111,13 +111,19 @@
                 buttons.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 const target = btn.dataset.tab;
-                const container = tabBar.closest('[data-tabs]') || document;
-                container.querySelectorAll('[data-tab-content]').forEach(panel => {
-                    panel.classList.toggle('hidden', panel.dataset.tabContent !== target);
+                // Find the nearest ancestor that contains the content panels
+                const section = tabBar.closest('section') || tabBar.closest('div[class*="max-w"]') || document;
+                section.querySelectorAll('[data-tab-content]').forEach(panel => {
+                    if (target === 'all') {
+                        panel.classList.remove('hidden');
+                    } else {
+                        panel.classList.toggle('hidden', panel.dataset.tabContent !== target);
+                    }
                 });
             });
         });
     });
+
 
     // ---- FAQ Accordion ----
     document.querySelectorAll('.faq-btn').forEach(btn => {

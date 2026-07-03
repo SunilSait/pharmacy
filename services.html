@@ -15,18 +15,30 @@
 
 <div id="navbar-container"></div>
 
-<!-- ===== PAGE HERO ===== -->
-<section class="relative py-28 overflow-hidden" style="background:linear-gradient(135deg,#F0FDF4 0%,#DCFCE7 100%);">
-    <div class="absolute inset-0 pointer-events-none">
-        <div class="absolute w-[700px] h-[700px] rounded-full" style="background:radial-gradient(circle,rgba(5,150,105,0.09) 0%,transparent 70%);top:-250px;right:-200px;"></div>
-        <div class="absolute inset-0" style="background-image:linear-gradient(rgba(5,150,105,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(5,150,105,0.04) 1px,transparent 1px);background-size:48px 48px;"></div>
-    </div>
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-        <div class="section-tag mx-auto animate-on-scroll slide-up">
-            <i class="fas fa-briefcase-medical text-xs"></i> Our Services
+<!-- ===== PAGE BANNER ===== -->
+<section class="relative h-[340px] md:h-[420px] overflow-hidden">
+    <img
+        src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&h=600&q=80"
+        alt="MediCare Healthcare Services"
+        class="absolute inset-0 w-full h-full object-cover"
+    >
+    <div class="absolute inset-0" style="background:linear-gradient(135deg,rgba(4,7,5,0.70) 0%,rgba(5,150,105,0.52) 100%);"></div>
+    <div class="absolute top-6 left-0 right-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <nav class="flex items-center gap-2 text-white/60 text-xs uppercase tracking-widest font-semibold">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <i class="fas fa-chevron-right text-[8px]"></i>
+                <span class="text-white">Our Services</span>
+            </nav>
         </div>
-        <h1 class="animate-on-scroll slide-up text-[#0F172A] dark:text-white" style="transition-delay:0.1s;">Complete Healthcare<br><span class="green-text">Services for You</span></h1>
-        <p class="section-subtitle mx-auto text-center mt-4 animate-on-scroll slide-up" style="transition-delay:0.2s;">From dispensing medicines to home delivery and expert consultation — everything under one roof.</p>
+    </div>
+    <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/25 bg-white/10 mb-4">
+            <i class="fas fa-briefcase-medical text-white text-xs"></i>
+            <span class="text-white text-xs font-bold uppercase tracking-[0.2em]">Our Services</span>
+        </div>
+        <h1 class="text-white mb-3" style="font-family:'Sora',sans-serif;text-shadow:0 2px 16px rgba(0,0,0,0.4);">Complete Healthcare<br><span style="color:#34D399;">Services for You</span></h1>
+        <p class="text-white/80 text-base max-w-2xl mx-auto">From dispensing medicines to home delivery and expert consultation — everything under one roof.</p>
     </div>
 </section>
 
@@ -78,7 +90,7 @@
         </div>
 
         <!-- Service 3: Baby Care -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
             <div class="animate-on-scroll slide-right">
                 <div class="rounded-3xl overflow-hidden shadow-2xl shadow-[#059669]/15">
                     <img src="assets/images/baby-care.png" alt="Baby Care Products" class="w-full h-[420px] object-cover">
@@ -98,11 +110,33 @@
                 <a href="products.html" class="btn btn-primary" id="svc-baby">Browse Baby Care</a>
             </div>
         </div>
+
+        <!-- Service 4: Wellness & Nutrition -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1 animate-on-scroll slide-right">
+                <div class="section-tag"><i class="fas fa-leaf text-xs"></i> Wellness & Nutrition</div>
+                <h2 class="section-title">Wellness, Vitamins &<br>Nutritional Supplements</h2>
+                <p class="text-neutral-500 dark:text-neutral-400 mb-6">A healthy lifestyle starts with premium nutrition. We offer a curated collection of wellness supplements, minerals, multivitamins, and natural herbal remedies to help you stay energetic and resilient.</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center gap-3 text-neutral-600 dark:text-neutral-400 text-sm"><i class="fas fa-circle-check text-[#059669]"></i> Multivitamins & daily mineral supplements</li>
+                    <li class="flex items-center gap-3 text-[#059669] text-sm"><i class="fas fa-circle-check text-[#059669]"></i> Organic herbal wellness formulations</li>
+                    <li class="flex items-center gap-3 text-neutral-600 dark:text-neutral-400 text-sm"><i class="fas fa-circle-check text-[#059669]"></i> Sports nutrition, protein powders & energy boosters</li>
+                    <li class="flex items-center gap-3 text-neutral-600 dark:text-neutral-400 text-sm"><i class="fas fa-circle-check text-[#059669]"></i> Dietary fibers & probiotic gut health drinks</li>
+                    <li class="flex items-center gap-3 text-neutral-600 dark:text-neutral-400 text-sm"><i class="fas fa-circle-check text-[#059669]"></i> Immunity support pills & wellness tea</li>
+                </ul>
+                <a href="products.html" class="btn btn-primary" id="svc-wellness">Shop Wellness & Vitamins</a>
+            </div>
+            <div class="order-1 lg:order-2 animate-on-scroll slide-left">
+                <div class="rounded-3xl overflow-hidden shadow-2xl shadow-[#059669]/15">
+                    <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=600&h=420&q=80" alt="Wellness and Nutrition Supplements" class="w-full h-[420px] object-cover">
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- ===== ADDITIONAL SERVICES ===== -->
-<section class="py-24" style="background:linear-gradient(135deg,#F0FDF4 0%,#DCFCE7 100%);">
+<section class="py-24 bg-white dark:bg-[#0D2318]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-16 animate-on-scroll slide-up">
             <div class="section-tag mx-auto">
@@ -116,7 +150,7 @@
                 <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-4 border border-[#059669]/20">
                     <i class="fas fa-file-medical text-[#059669] text-xl"></i>
                 </div>
-                <h4 class="font-bold text-[#0F172A] dark:text-white mb-2" style="font-family:'Sora',sans-serif;">Prescription Upload</h4>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-2" style="font-family:'Sora',sans-serif;">Prescription</h4>
                 <p class="text-sm text-neutral-500 dark:text-neutral-400">Upload your doctor's prescription online and get medicines delivered or ready for pickup.</p>
             </div>
 
@@ -125,15 +159,15 @@
                     <i class="fas fa-truck-fast text-[#059669] text-xl"></i>
                 </div>
                 <h4 class="font-bold text-[#0F172A] dark:text-white mb-2" style="font-family:'Sora',sans-serif;">Home Delivery</h4>
-                <p class="text-sm text-neutral-500 dark:text-neutral-400">Fast and reliable home delivery with real-time tracking. Free delivery on orders above ₹500.</p>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">Fast and reliable home delivery with real-time tracking. Free delivery on orders.</p>
             </div>
 
             <div class="card p-6 text-center animate-on-scroll slide-up" style="transition-delay:0.3s;">
                 <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-4 border border-[#059669]/20">
                     <i class="fas fa-user-doctor text-[#059669] text-xl"></i>
                 </div>
-                <h4 class="font-bold text-[#0F172A] dark:text-white mb-2" style="font-family:'Sora',sans-serif;">Free Consultation</h4>
-                <p class="text-sm text-neutral-500 dark:text-neutral-400">Talk to our licensed pharmacists for medicine queries, dosage guidance and drug interaction checks.</p>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-2" style="font-family:'Sora',sans-serif;"> Consultation</h4>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">Talk to our licensed pharmacists for medicine queries and drug interaction.</p>
             </div>
 
             <div class="card p-6 text-center animate-on-scroll slide-up" style="transition-delay:0.4s;">
@@ -141,7 +175,98 @@
                     <i class="fas fa-bell text-[#059669] text-xl"></i>
                 </div>
                 <h4 class="font-bold text-[#0F172A] dark:text-white mb-2" style="font-family:'Sora',sans-serif;">Refill Reminders</h4>
-                <p class="text-sm text-neutral-500 dark:text-neutral-400">Never miss your medication — we send timely SMS & WhatsApp reminders when it's time to refill.</p>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">Never miss your medication — we send WhatsApp reminders when it's time to refill.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SERVICE COMPARISON TABLE ===== -->
+<section class="py-24 bg-cream-gradient-simple">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16 animate-on-scroll slide-up">
+            <div class="section-tag mx-auto">
+                <i class="fas fa-table text-xs"></i> Service Comparison
+            </div>
+            <h2 class="section-title">Standard vs Premium Healthcare Services</h2>
+            <p class="section-subtitle mx-auto text-center">Compare our membership tiers to choose the best option for you and your family.</p>
+        </div>
+
+        <div class="w-full overflow-hidden rounded-3xl border border-[#D1FAE5] dark:border-[#1A3D2A] shadow-xl animate-on-scroll slide-up">
+            <table class="w-full text-left border-collapse bg-white dark:bg-[#0D2318] table-fixed">
+                <thead>
+                    <tr class="bg-[#F0FDF4] dark:bg-[#122B1E] border-b border-[#D1FAE5] dark:border-[#1A3D2A]">
+                        <th class="w-[30%] px-2.5 py-4 md:p-6 text-[11px] md:text-sm font-bold text-[#0F172A] dark:text-white uppercase tracking-wider">Features</th>
+                        <th class="w-[35%] px-2.5 py-4 md:p-6 text-[11px] md:text-sm font-bold text-[#0F172A] dark:text-white uppercase tracking-wider">Standard</th>
+                        <th class="w-[35%] px-2.5 py-4 md:p-6 text-[11px] md:text-sm font-bold text-[#059669] dark:text-[#34D399] uppercase tracking-wider">Premium</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-[#D1FAE5] dark:divide-[#1A3D2A]">
+                    <tr>
+                        <td class="px-2.5 py-4 md:p-6 text-[11px] md:text-sm font-medium text-[#0F172A] dark:text-white">Delivery Time</td>
+                        <td class="px-2.5 py-4 md:p-6 text-[11px] md:text-sm text-neutral-500 dark:text-neutral-400">24 – 48 Hours</td>
+                        <td class="px-2.5 py-4 md:p-6 text-[11px] md:text-sm text-[#059669] dark:text-[#34D399] font-bold">2h Express</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2.5 py-4 md:p-6 text-[11px] md:text-sm font-medium text-[#0F172A] dark:text-white">Delivery Fee</td>
+                        <td class="px-2.5 py-4 md:p-6 text-[11px] md:text-sm text-neutral-500 dark:text-neutral-400">Free over ₹500</td>
+                        <td class="px-2.5 py-4 md:p-6 text-[11px] md:text-sm text-[#059669] dark:text-[#34D399] font-bold">Always Free</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2.5 py-4 md:p-6 text-[11px] md:text-sm font-medium text-[#0F172A] dark:text-white">Discount</td>
+                        <td class="px-2.5 py-4 md:p-6 text-[11px] md:text-sm text-neutral-500 dark:text-neutral-400">Up to 5% Off</td>
+                        <td class="px-2.5 py-4 md:p-6 text-[11px] md:text-sm text-[#059669] dark:text-[#34D399] font-bold">15% - 30% Off</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2.5 py-4 md:p-6 text-[11px] md:text-sm font-medium text-[#0F172A] dark:text-white">Consultation</td>
+                        <td class="px-2.5 py-4 md:p-6 text-[11px] md:text-sm text-neutral-500 dark:text-neutral-400">Helpline</td>
+                        <td class="px-2.5 py-4 md:p-6 text-[11px] md:text-sm text-[#059669] dark:text-[#34D399] font-bold">Dedicated</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2.5 py-4 md:p-6 text-[11px] md:text-sm font-medium text-[#0F172A] dark:text-white">Reminders</td>
+                        <td class="px-2.5 py-4 md:p-6 text-[11px] md:text-sm text-neutral-500 dark:text-neutral-400">Monthly Alert</td>
+                        <td class="px-2.5 py-4 md:p-6 text-[11px] md:text-sm text-[#059669] dark:text-[#34D399] font-bold">Smart + WA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FAQ ACCORDION SECTION ===== -->
+<section class="py-24 bg-white dark:bg-[#0D2318]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16 animate-on-scroll slide-up">
+            <div class="section-tag mx-auto">
+                <i class="fas fa-circle-question text-xs"></i> FAQs
+            </div>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle mx-auto text-center">Quick answers to common questions about our ordering and medical services.</p>
+        </div>
+
+        <div class="space-y-4">
+            <!-- FAQ 1 -->
+            <div class="rounded-2xl border border-[#D1FAE5] dark:border-[#1A3D2A] p-6 bg-[#F9FBF9] dark:bg-[#0A1A12] animate-on-scroll slide-up">
+                <h4 class="font-bold text-[#0F172A] dark:text-white text-base mb-2">How do I upload my prescription?</h4>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">You can visit our Contact page or Home page, fill out the prescription enquiry form, click upload to add an image or PDF of your doctor's note, and submit it. Our team will contact you within 30 minutes.</p>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="rounded-2xl border border-[#D1FAE5] dark:border-[#1A3D2A] p-6 bg-[#F9FBF9] dark:bg-[#0A1A12] animate-on-scroll slide-up">
+                <h4 class="font-bold text-[#0F172A] dark:text-white text-base mb-2">Is the home delivery service safe and sanitary?</h4>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">Yes, 100%. All medicines are packed in sealed, clinical-grade sanitized bags. Refrigerated products (such as insulin) are shipped in specialized temperature-controlled cold boxes.</p>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="rounded-2xl border border-[#D1FAE5] dark:border-[#1A3D2A] p-6 bg-[#F9FBF9] dark:bg-[#0A1A12] animate-on-scroll slide-up">
+                <h4 class="font-bold text-[#0F172A] dark:text-white text-base mb-2">Are the medicines genuine?</h4>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">Absolutely. We source all our pharmaceuticals directly from manufacturer-authorized distributors. We guarantee zero counterfeit risk and maintain full batch traceability.</p>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="rounded-2xl border border-[#D1FAE5] dark:border-[#1A3D2A] p-6 bg-[#F9FBF9] dark:bg-[#0A1A12] animate-on-scroll slide-up">
+                <h4 class="font-bold text-[#0F172A] dark:text-white text-base mb-2">What happens if a medicine is out of stock?</h4>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">If a medicine is currently out of stock, our pharmacist will contact you to recommend equivalent certified alternatives or request a special order to source it for you within 24 hours.</p>
             </div>
         </div>
     </div>

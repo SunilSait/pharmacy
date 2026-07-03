@@ -15,18 +15,30 @@
 
 <div id="navbar-container"></div>
 
-<!-- ===== PAGE HERO ===== -->
-<section class="relative py-28 overflow-hidden" style="background:linear-gradient(135deg,#F0FDF4 0%,#DCFCE7 100%);">
-    <div class="absolute inset-0 pointer-events-none">
-        <div class="absolute w-[600px] h-[600px] rounded-full" style="background:radial-gradient(circle,rgba(5,150,105,0.09) 0%,transparent 70%);top:-200px;right:-150px;"></div>
-        <div class="absolute inset-0" style="background-image:linear-gradient(rgba(5,150,105,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(5,150,105,0.04) 1px,transparent 1px);background-size:48px 48px;"></div>
-    </div>
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-        <div class="section-tag mx-auto animate-on-scroll slide-up">
-            <i class="fas fa-phone text-xs"></i> Contact Us
+<!-- ===== PAGE BANNER ===== -->
+<section class="relative h-[340px] md:h-[420px] overflow-hidden">
+    <img
+        src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&h=600&q=80"
+        alt="MediCare Contact Us"
+        class="absolute inset-0 w-full h-full object-cover"
+    >
+    <div class="absolute inset-0" style="background:linear-gradient(135deg,rgba(4,7,5,0.70) 0%,rgba(5,150,105,0.52) 100%);"></div>
+    <div class="absolute top-6 left-0 right-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <nav class="flex items-center gap-2 text-white/60 text-xs uppercase tracking-widest font-semibold">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <i class="fas fa-chevron-right text-[8px]"></i>
+                <span class="text-white">Contact Us</span>
+            </nav>
         </div>
-        <h1 class="animate-on-scroll slide-up text-[#0F172A] dark:text-white" style="transition-delay:0.1s;">We're Here to<br><span class="green-text">Help You</span></h1>
-        <p class="section-subtitle mx-auto text-center mt-4 animate-on-scroll slide-up" style="transition-delay:0.2s;">Call, WhatsApp, or upload your prescription — our team responds within 30 minutes.</p>
+    </div>
+    <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/25 bg-white/10 mb-4">
+            <i class="fas fa-phone text-white text-xs"></i>
+            <span class="text-white text-xs font-bold uppercase tracking-[0.2em]">Contact Us</span>
+        </div>
+        <h1 class="text-white mb-3" style="font-family:'Sora',sans-serif;text-shadow:0 2px 16px rgba(0,0,0,0.4);">We're Here to<br><span style="color:#34D399;">Help You</span></h1>
+        <p class="text-white/80 text-base max-w-2xl mx-auto">Call, WhatsApp, or upload your prescription — our team responds within 30 minutes.</p>
     </div>
 </section>
 
@@ -57,7 +69,7 @@
                     <i class="fas fa-envelope text-[#059669] text-xl group-hover:text-white transition-all"></i>
                 </div>
                 <h4 class="font-bold text-[#0F172A] dark:text-white mb-1" style="font-family:'Sora',sans-serif;">Email Us</h4>
-                <p class="text-[#059669] font-semibold text-sm text-wrap break-all">care@medicare-pharmacy.com</p>
+                <p class="text-[#059669] font-semibold text-sm text-wrap break-all">care@pharmacy.com</p>
                 <p class="text-neutral-500 text-xs mt-1">Reply within 2 hours</p>
             </a>
 
@@ -74,7 +86,7 @@
 </section>
 
 <!-- ===== PRESCRIPTION FORM & GENERAL ENQUIRY ===== -->
-<section id="prescription" class="py-24" style="background:linear-gradient(135deg,#F0FDF4 0%,#DCFCE7 100%);">
+<section id="prescription" class="py-24 bg-cream-gradient-simple">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
@@ -177,6 +189,30 @@
                         <i class="fas fa-circle-check mr-2"></i>Message sent! We'll reply within 2 hours.
                     </p>
                 </div>
+
+                <!-- Quick Help / Contact Info Card -->
+                <div class="mt-6 p-6 rounded-3xl bg-[#F0FDF4] dark:bg-[#122B1E] border border-[#059669]/15 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4 animate-on-scroll slide-up">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#059669]/10 flex items-center justify-center text-[#059669]">
+                            <i class="fas fa-headset text-lg"></i>
+                        </div>
+                        <div class="text-left">
+                            <div class="text-xs text-neutral-400 dark:text-neutral-500 uppercase font-semibold tracking-wider">Quick Support</div>
+                            <div class="text-sm font-bold text-[#0F172A] dark:text-white">+91 98400 12345</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <a href="tel:+919840012345" class="w-9 h-9 rounded-lg bg-[#059669] text-white flex items-center justify-center hover:bg-[#047857] transition-all" title="Call Us">
+                            <i class="fas fa-phone text-sm"></i>
+                        </a>
+                        <a href="https://wa.me/919840012345" class="w-9 h-9 rounded-lg bg-[#25D366] text-white flex items-center justify-center hover:bg-[#128C7E] transition-all" title="WhatsApp Us">
+                            <i class="fab fa-whatsapp text-base"></i>
+                        </a>
+                        <a href="mailto:care@medicare-pharmacy.com" class="w-9 h-9 rounded-lg bg-[#3B82F6] text-white flex items-center justify-center hover:bg-[#2563EB] transition-all" title="Email Us">
+                            <i class="fas fa-envelope text-sm"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -185,90 +221,54 @@
 <!-- ===== STORE TIMINGS & MAP ===== -->
 <section class="py-24 bg-white dark:bg-[#0D2318]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <!-- Timings -->
-            <div class="animate-on-scroll slide-right">
-                <div class="section-tag">
-                    <i class="fas fa-clock text-xs"></i> Store Timings
-                </div>
-                <h2 class="section-title">Visit Us at the Store</h2>
-                <p class="text-neutral-500 dark:text-neutral-400 mb-8">We're open 7 days a week. Walk in anytime within business hours for medicines, devices, consultations and more.</p>
+        <!-- Header -->
+        <div class="text-center mb-16 animate-on-scroll slide-up">
+            <div class="section-tag mx-auto">
+                <i class="fas fa-clock text-xs"></i> Visit Us
+            </div>
+            <h2 class="section-title">Store Timings & Location</h2>
+            <p class="section-subtitle mx-auto text-center">We're open 7 days a week and conveniently located to serve all your healthcare needs.</p>
+        </div>
 
-                <div class="space-y-4 mb-8">
-                    <div class="flex items-center justify-between p-4 rounded-xl bg-[#F0FDF4] dark:bg-[#122B1E] border border-[#D1FAE5] dark:border-[#1A3D2A]">
-                        <span class="font-semibold text-[#0F172A] dark:text-white text-sm">Monday</span>
-                        <span class="text-[#059669] font-bold text-sm">8:00 AM – 9:00 PM</span>
+        <!-- Store Timings (Centered Card) -->
+        <div class="max-w-md mx-auto mb-12 animate-on-scroll slide-up" style="transition-delay:0.1s;">
+            <div class="glass-card p-8 text-center border border-[#D1FAE5] dark:border-[#1A3D2A] shadow-md">
+                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-5">
+                    <i class="fas fa-clock text-[#059669] text-xl"></i>
+                </div>
+                <h3 class="font-bold text-[#0F172A] dark:text-white mb-4 text-xl" style="font-family:'Sora',sans-serif;">Store Hours</h3>
+                <div class="space-y-4 text-sm text-neutral-600 dark:text-neutral-400">
+                    <div class="pb-3 border-b border-[#D1FAE5]/50 dark:border-[#1A3D2A]/50">
+                        <div class="font-semibold text-neutral-700 dark:text-neutral-300">Monday – Saturday</div>
+                        <div class="text-[#059669] font-bold text-lg mt-1">8:00 AM – 9:00 PM</div>
                     </div>
-                    <div class="flex items-center justify-between p-4 rounded-xl bg-[#F0FDF4] dark:bg-[#122B1E] border border-[#D1FAE5] dark:border-[#1A3D2A]">
-                        <span class="font-semibold text-[#0F172A] dark:text-white text-sm">Tuesday</span>
-                        <span class="text-[#059669] font-bold text-sm">8:00 AM – 9:00 PM</span>
-                    </div>
-                    <div class="flex items-center justify-between p-4 rounded-xl bg-[#F0FDF4] dark:bg-[#122B1E] border border-[#D1FAE5] dark:border-[#1A3D2A]">
-                        <span class="font-semibold text-[#0F172A] dark:text-white text-sm">Wednesday</span>
-                        <span class="text-[#059669] font-bold text-sm">8:00 AM – 9:00 PM</span>
-                    </div>
-                    <div class="flex items-center justify-between p-4 rounded-xl bg-[#F0FDF4] dark:bg-[#122B1E] border border-[#D1FAE5] dark:border-[#1A3D2A]">
-                        <span class="font-semibold text-[#0F172A] dark:text-white text-sm">Thursday</span>
-                        <span class="text-[#059669] font-bold text-sm">8:00 AM – 9:00 PM</span>
-                    </div>
-                    <div class="flex items-center justify-between p-4 rounded-xl bg-[#F0FDF4] dark:bg-[#122B1E] border border-[#D1FAE5] dark:border-[#1A3D2A]">
-                        <span class="font-semibold text-[#0F172A] dark:text-white text-sm">Friday</span>
-                        <span class="text-[#059669] font-bold text-sm">8:00 AM – 9:00 PM</span>
-                    </div>
-                    <div class="flex items-center justify-between p-4 rounded-xl bg-[#F0FDF4] dark:bg-[#122B1E] border border-[#D1FAE5] dark:border-[#1A3D2A]">
-                        <span class="font-semibold text-[#0F172A] dark:text-white text-sm">Saturday</span>
-                        <span class="text-[#059669] font-bold text-sm">8:00 AM – 9:00 PM</span>
-                    </div>
-                    <div class="flex items-center justify-between p-4 rounded-xl border-2 border-[#059669] bg-[#059669]/5">
-                        <span class="font-semibold text-[#0F172A] dark:text-white text-sm">Sunday</span>
-                        <span class="text-[#059669] font-bold text-sm">9:00 AM – 6:00 PM</span>
+                    <div>
+                        <div class="font-semibold text-neutral-700 dark:text-neutral-300">Sunday</div>
+                        <div class="text-[#059669] font-bold text-lg mt-1">9:00 AM – 6:00 PM</div>
                     </div>
                 </div>
-
-                <div class="p-5 rounded-2xl bg-[#059669]/8 border border-[#059669]/20">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="w-2.5 h-2.5 rounded-full bg-[#059669] animate-pulse"></span>
-                        <span class="text-[#059669] font-bold text-sm">Currently Open</span>
-                    </div>
-                    <p class="text-neutral-500 dark:text-neutral-400 text-sm">Home delivery available during all store hours. WhatsApp for urgent requests.</p>
+                <div class="mt-6 p-4 rounded-xl bg-[#059669]/8 border border-[#059669]/20 inline-flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-[#059669] animate-pulse"></span>
+                    <span class="text-[#059669] font-bold text-xs">Currently Open</span>
                 </div>
             </div>
+        </div>
 
-            <!-- Map Placeholder -->
-            <div class="animate-on-scroll slide-left">
-                <div class="section-tag">
-                    <i class="fas fa-map text-xs"></i> Location
-                </div>
-                <h2 class="section-title">Find Our Store</h2>
-                <p class="text-neutral-500 dark:text-neutral-400 mb-6">14 Health Avenue, Near City Hospital, Chennai, TN 600001</p>
-
-                <!-- Map embed placeholder -->
-                <div class="rounded-3xl overflow-hidden border border-[#D1FAE5] dark:border-[#1A3D2A] shadow-lg" style="height:360px;background:linear-gradient(135deg,#F0FDF4,#DCFCE7);">
-                    <div class="w-full h-full flex flex-col items-center justify-center gap-4">
-                        <div class="w-20 h-20 rounded-full bg-[#059669]/15 flex items-center justify-center border-4 border-[#059669]/30">
-                            <i class="fas fa-map-marker-alt text-[#059669] text-4xl"></i>
-                        </div>
-                        <div class="text-center">
-                            <div class="font-bold text-[#0F172A] dark:text-white text-lg mb-1" style="font-family:'Sora',sans-serif;">MediCare Pharmacy</div>
-                            <div class="text-neutral-500 text-sm">14 Health Avenue, Near City Hospital</div>
-                            <div class="text-neutral-500 text-sm">Chennai, Tamil Nadu 600001</div>
-                        </div>
-                        <a href="https://maps.google.com/?q=Chennai+TN" target="_blank" class="btn btn-primary btn-sm mt-2" id="contact-directions">
-                            <i class="fas fa-directions text-xs"></i> Get Directions
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Quick contact buttons -->
-                <div class="grid grid-cols-2 gap-4 mt-6">
-                    <a href="tel:+919840012345" class="flex items-center gap-3 p-4 rounded-xl bg-[#059669] text-white font-semibold text-sm justify-center hover:bg-[#047857] transition-all" id="contact-call-btn">
-                        <i class="fas fa-phone"></i> Call Now
-                    </a>
-                    <a href="https://wa.me/919840012345" class="flex items-center gap-3 p-4 rounded-xl border-2 border-[#059669] text-[#059669] font-semibold text-sm justify-center hover:bg-[#059669] hover:text-white transition-all" id="contact-wa-btn">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                    </a>
-                </div>
+        <!-- Live Google Map (Centered Below) -->
+        <div class="flex justify-center animate-on-scroll slide-up" style="transition-delay:0.2s;">
+            <div class="w-full max-w-4xl rounded-3xl overflow-hidden border border-[#D1FAE5] dark:border-[#1A3D2A] shadow-xl shadow-[#059669]/5">
+                <iframe src="https://maps.google.com/maps?q=14%20Health%20Avenue,%20Near%20City%20Hospital,%20Chennai,%20TN%20600001&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[400px]"></iframe>
             </div>
+        </div>
+
+        <!-- Quick contact buttons (Centered Below Map) -->
+        <div class="max-w-md mx-auto grid grid-cols-2 gap-4 mt-8 animate-on-scroll slide-up" style="transition-delay:0.3s;">
+            <a href="tel:+919840012345" class="flex items-center gap-3 p-4 rounded-xl bg-[#059669] text-white font-semibold text-sm justify-center hover:bg-[#047857] transition-all" id="contact-call-btn">
+                <i class="fas fa-phone"></i> Call Now
+            </a>
+            <a href="https://wa.me/919840012345" class="flex items-center gap-3 p-4 rounded-xl border-2 border-[#059669] text-[#059669] font-semibold text-sm justify-center hover:bg-[#059669] hover:text-white transition-all" id="contact-wa-btn">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
         </div>
     </div>
 </section>

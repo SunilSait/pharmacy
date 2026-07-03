@@ -15,6 +15,8 @@
         .glow-pulse { animation: glowPulse 3s ease-in-out infinite; }
         @keyframes slideInBanner { from{transform:translateX(0);} to{transform:translateX(-50%);} }
         .banner-track { animation: slideInBanner 20s linear infinite; display: flex; gap: 48px; }
+        .btn-outline-green { border: 1.5px solid rgba(5,150,105,0.45); color: #34D399; background: transparent; }
+        .btn-outline-green:hover { background: #059669; color: #FFFFFF !important; border-color: #059669; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(5,150,105,0.15); }
     </style>
 </head>
 <body>
@@ -180,7 +182,7 @@
                 <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style="background:rgba(5,150,105,0.12);border:1px solid rgba(5,150,105,0.2);">
                     <i class="fas fa-heart-pulse text-[#34D399] text-xl"></i>
                 </div>
-                <h3 class="text-white font-bold mb-3 text-xl" style="font-family:'Sora',sans-serif;">Health Monitoring Devices</h3>
+                <h3 class="text-white font-bold mb-3 text-xl" style="font-family:'Sora',sans-serif;">Health Devices</h3>
                 <p class="text-neutral-400 text-sm mb-4">Premium blood pressure monitors, glucometers, pulse oximeters and digital thermometers.</p>
                 <a href="products.html" class="text-[#34D399] text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
                     Shop Devices <i class="fas fa-arrow-right text-xs"></i>
@@ -216,7 +218,7 @@
                 <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style="background:rgba(5,150,105,0.12);border:1px solid rgba(5,150,105,0.2);">
                     <i class="fas fa-user-doctor text-[#34D399] text-xl"></i>
                 </div>
-                <h3 class="text-white font-bold mb-3 text-xl" style="font-family:'Sora',sans-serif;">Pharmacist Consultation</h3>
+                <h3 class="text-white font-bold mb-3 text-xl" style="font-family:'Sora',sans-serif;">Consultation</h3>
                 <p class="text-neutral-400 text-sm mb-4">Get free advice from our licensed pharmacists on medicines, dosage and drug interactions.</p>
                 <a href="contact.html" class="text-[#34D399] text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
                     Consult Now <i class="fas fa-arrow-right text-xs"></i>
@@ -261,7 +263,7 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-4 p-4 rounded-xl" style="background:rgba(5,150,105,0.06);border:1px solid rgba(5,150,105,0.12);">
-                        <i class="fas fa-shield-check text-[#34D399] text-lg"></i>
+                        <i class="fas fa-shield-halved text-[#34D399] text-lg"></i>
                         <div>
                             <div class="text-white font-semibold text-sm">Pharmacist Verified</div>
                             <div class="text-neutral-400 text-xs">Licensed pharmacist reviews every prescription</div>
@@ -345,7 +347,7 @@
                     <li class="flex items-center gap-3 text-neutral-400 text-sm"><i class="fas fa-times text-neutral-600"></i> Priority support</li>
                     <li class="flex items-center gap-3 text-neutral-400 text-sm"><i class="fas fa-times text-neutral-600"></i> Member discounts</li>
                 </ul>
-                <a href="signup.html" class="btn btn-secondary btn-full" id="plan-basic">Get Started</a>
+                <a href="signup.html" class="btn btn-outline-green btn-full" id="plan-basic">Get Started</a>
             </div>
 
             <!-- Premium (Featured) -->
@@ -388,8 +390,253 @@
                     <li class="flex items-center gap-3 text-neutral-300 text-sm"><i class="fas fa-check text-[#34D399]"></i> Dedicated pharmacist</li>
                     <li class="flex items-center gap-3 text-neutral-300 text-sm"><i class="fas fa-check text-[#34D399]"></i> Free annual health checkup</li>
                 </ul>
-                <a href="signup.html" class="btn btn-secondary btn-full" id="plan-family">Get Family Plan</a>
+                <a href="signup.html" class="btn btn-outline-green btn-full" id="plan-family">Get Family Plan</a>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="py-24 bg-[#040D09]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16 animate-on-scroll slide-up">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#059669]/25 bg-[#059669]/8 mb-6">
+                <i class="fas fa-route text-[#34D399] text-xs"></i>
+                <span class="text-[#34D399] text-xs font-bold uppercase tracking-[0.2em]">Simple Process</span>
+            </div>
+            <h2 class="text-white" style="font-family:'Sora',sans-serif;">How MediCare<br>Works For You</h2>
+            <p class="text-neutral-400 text-lg mt-4 max-w-2xl mx-auto">Getting your medicines is as easy as 1-2-3. We've built a seamless experience from prescription to delivery.</p>
+        </div>
+
+        <div class="relative">
+            <!-- Connector line -->
+            <div class="hidden lg:block absolute top-10 left-[12.5%] right-[12.5%] h-px" style="background:linear-gradient(90deg,transparent,rgba(5,150,105,0.4),rgba(52,211,153,0.6),rgba(5,150,105,0.4),transparent);"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center animate-on-scroll slide-up" style="transition-delay:0.1s;">
+                    <div class="relative z-10 inline-block mb-6">
+                        <div class="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto" style="background:#041D15;border:2px solid rgba(52,211,153,0.3);">
+                            <i class="fas fa-search text-[#34D399] text-2xl"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-[#34D399] flex items-center justify-center text-[#071A12] font-bold text-sm">1</div>
+                    </div>
+                    <h4 class="text-white font-bold mb-2" style="font-family:'Sora',sans-serif;">Search or Upload</h4>
+                    <p class="text-neutral-400 text-sm">Browse our 15,000+ products or simply upload your prescription image</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center animate-on-scroll slide-up" style="transition-delay:0.2s;">
+                    <div class="relative z-10 inline-block mb-6">
+                        <div class="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto" style="background:#041D15;border:2px solid rgba(52,211,153,0.3);">
+                            <i class="fas fa-user-doctor text-[#34D399] text-2xl"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-[#34D399] flex items-center justify-center text-[#071A12] font-bold text-sm">2</div>
+                    </div>
+                    <h4 class="text-white font-bold mb-2" style="font-family:'Sora',sans-serif;">Pharmacist Verifies</h4>
+                    <p class="text-neutral-400 text-sm">Our pharmacist reviews your order and confirms medicines within minutes</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center animate-on-scroll slide-up" style="transition-delay:0.3s;">
+                    <div class="relative z-10 inline-block mb-6">
+                        <div class="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto" style="background:#041D15;border:2px solid rgba(52,211,153,0.3);">
+                            <i class="fas fa-box-open text-[#34D399] text-2xl"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-[#34D399] flex items-center justify-center text-[#071A12] font-bold text-sm">3</div>
+                    </div>
+                    <h4 class="text-white font-bold mb-2" style="font-family:'Sora',sans-serif;">Order Prepared</h4>
+                    <p class="text-neutral-400 text-sm">Medicines are carefully packed with temperature control for sensitive products</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="text-center animate-on-scroll slide-up" style="transition-delay:0.4s;">
+                    <div class="relative z-10 inline-block mb-6">
+                        <div class="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto" style="background:#041D15;border:2px solid rgba(52,211,153,0.3);">
+                            <i class="fas fa-truck-fast text-[#34D399] text-2xl"></i>
+                        </div>
+                        <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-[#34D399] flex items-center justify-center text-[#071A12] font-bold text-sm">4</div>
+                    </div>
+                    <h4 class="text-white font-bold mb-2" style="font-family:'Sora',sans-serif;">Delivered Fast</h4>
+                    <p class="text-neutral-400 text-sm">Get doorstep delivery within 2 hours for premium members, same day for all</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-14 animate-on-scroll slide-up">
+            <a href="contact.html#prescription" class="btn btn-primary btn-lg" id="h2-how-rx" style="border-radius:50px;">
+                <i class="fas fa-file-medical text-sm"></i> Start Your Order
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== TRUSTED BRANDS ===== -->
+<section class="py-16 bg-[#071A12]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center mb-10 animate-on-scroll slide-up">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#059669]/25 bg-[#059669]/8 mb-4">
+            <i class="fas fa-handshake text-[#34D399] text-xs"></i>
+            <span class="text-[#34D399] text-xs font-bold uppercase tracking-[0.2em]">Trusted Brands</span>
+        </div>
+        <h2 class="text-white text-2xl font-bold" style="font-family:'Sora',sans-serif;">We Stock Products From</h2>
+        <p class="text-neutral-400 text-sm mt-2">50+ globally recognized healthcare brands available in-store and online</p>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 max-w-5xl mx-auto px-4">
+        <div class="flex flex-col items-center gap-3 p-5 rounded-2xl animate-on-scroll slide-up" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);transition-delay:0.05s;">
+            <i class="fas fa-heart-pulse text-[#34D399] text-2xl"></i>
+            <span class="text-white text-xs font-semibold">Omron</span>
+        </div>
+        <div class="flex flex-col items-center gap-3 p-5 rounded-2xl animate-on-scroll slide-up" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);transition-delay:0.1s;">
+            <i class="fas fa-droplet text-[#34D399] text-2xl"></i>
+            <span class="text-white text-xs font-semibold">Accu-Chek</span>
+        </div>
+        <div class="flex flex-col items-center gap-3 p-5 rounded-2xl animate-on-scroll slide-up" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);transition-delay:0.15s;">
+            <i class="fas fa-baby text-[#34D399] text-2xl"></i>
+            <span class="text-white text-xs font-semibold">Johnson's</span>
+        </div>
+        <div class="flex flex-col items-center gap-3 p-5 rounded-2xl animate-on-scroll slide-up" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);transition-delay:0.2s;">
+            <i class="fas fa-leaf text-[#34D399] text-2xl"></i>
+            <span class="text-white text-xs font-semibold">Himalaya</span>
+        </div>
+        <div class="flex flex-col items-center gap-3 p-5 rounded-2xl animate-on-scroll slide-up" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);transition-delay:0.25s;">
+            <i class="fas fa-capsules text-[#34D399] text-2xl"></i>
+            <span class="text-white text-xs font-semibold">Abbott</span>
+        </div>
+        <div class="flex flex-col items-center gap-3 p-5 rounded-2xl animate-on-scroll slide-up" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);transition-delay:0.3s;">
+            <i class="fas fa-shield-halved text-[#34D399] text-2xl"></i>
+            <span class="text-white text-xs font-semibold">Dr. Morepen</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== HEALTH TIPS BLOG ===== -->
+<section class="py-24 bg-[#040D09]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16 animate-on-scroll slide-up">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#059669]/25 bg-[#059669]/8 mb-6">
+                <i class="fas fa-newspaper text-[#34D399] text-xs"></i>
+                <span class="text-[#34D399] text-xs font-bold uppercase tracking-[0.2em]">Health Tips</span>
+            </div>
+            <h2 class="text-white" style="font-family:'Sora',sans-serif;">Expert Health Tips<br>From Our Pharmacists</h2>
+            <p class="text-neutral-400 mt-4 max-w-xl mx-auto">Practical advice to help you live healthier — curated by our licensed pharmacist team.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Tip 1 -->
+            <div class="rounded-2xl overflow-hidden animate-on-scroll slide-up" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);transition-delay:0.1s;">
+                <div class="h-44 flex items-center justify-center" style="background:linear-gradient(135deg,rgba(5,150,105,0.2),rgba(4,120,87,0.3));">
+                    <i class="fas fa-heart-pulse text-[#34D399] text-6xl opacity-60"></i>
+                </div>
+                <div class="p-6">
+                    <span class="text-[10px] uppercase tracking-widest text-[#34D399] font-bold">Cardiovascular</span>
+                    <h4 class="text-white font-bold text-lg mt-2 mb-3" style="font-family:'Sora',sans-serif;">5 Habits to Keep Your Blood & Heart Healthy</h4>
+                    <p class="text-neutral-400 text-sm mb-4">Simple daily practices — from staying hydrated to monitoring blood pressure — can dramatically reduce your cardiovascular risk.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-neutral-500 text-xs"><i class="fas fa-user-doctor mr-1 text-[#34D399]"></i>Dr. Rajan M.</span>
+                        <span class="text-neutral-500 text-xs">5 min read</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tip 2 -->
+            <div class="rounded-2xl overflow-hidden animate-on-scroll slide-up" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);transition-delay:0.2s;">
+                <div class="h-44 flex items-center justify-center" style="background:linear-gradient(135deg,rgba(5,150,105,0.2),rgba(4,120,87,0.3));">
+                    <i class="fas fa-droplet text-[#34D399] text-6xl opacity-60"></i>
+                </div>
+                <div class="p-6">
+                    <span class="text-[10px] uppercase tracking-widest text-[#34D399] font-bold">Diabetes Care</span>
+                    <h4 class="text-white font-bold text-lg mt-2 mb-3" style="font-family:'Sora',sans-serif;">Managing Blood Sugar With Diet & Medication</h4>
+                    <p class="text-neutral-400 text-sm mb-4">Learn how combining the right diet with proper medication timing can help you maintain stable blood sugar levels throughout the day.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-neutral-500 text-xs"><i class="fas fa-user-doctor mr-1 text-[#34D399]"></i>Arjun Kumar</span>
+                        <span class="text-neutral-500 text-xs">7 min read</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tip 3 -->
+            <div class="rounded-2xl overflow-hidden animate-on-scroll slide-up" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);transition-delay:0.3s;">
+                <div class="h-44 flex items-center justify-center" style="background:linear-gradient(135deg,rgba(5,150,105,0.2),rgba(4,120,87,0.3));">
+                    <i class="fas fa-baby text-[#34D399] text-6xl opacity-60"></i>
+                </div>
+                <div class="p-6">
+                    <span class="text-[10px] uppercase tracking-widest text-[#34D399] font-bold">Baby Care</span>
+                    <h4 class="text-white font-bold text-lg mt-2 mb-3" style="font-family:'Sora',sans-serif;">Choosing the Right Baby Formula Newborn</h4>
+                    <p class="text-neutral-400 text-sm mb-4">With dozens of formula options available, our pediatric specialist guides you through what to look for based on your baby's needs.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-neutral-500 text-xs"><i class="fas fa-user-doctor mr-1 text-[#34D399]"></i>Sunita Patel</span>
+                        <span class="text-neutral-500 text-xs">6 min read</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CUSTOMER REVIEWS ===== -->
+<section class="py-24 bg-[#071A12]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16 animate-on-scroll slide-up">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#059669]/25 bg-[#059669]/8 mb-6">
+                <i class="fas fa-star text-[#34D399] text-xs"></i>
+                <span class="text-[#34D399] text-xs font-bold uppercase tracking-[0.2em]">Reviews</span>
+            </div>
+            <h2 class="text-white" style="font-family:'Sora',sans-serif;">What Premium Members Say</h2>
+            <p class="text-neutral-400 mt-4">Rated 4.9/5 by over 25,000 happy customers across the city</p>
+        </div>
+
+        <!-- Rating Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-14">
+            <div class="md:col-span-1 flex flex-col items-center justify-center rounded-2xl p-8 text-center animate-on-scroll slide-up" style="background:rgba(5,150,105,0.08);border:1px solid rgba(5,150,105,0.2);">
+                <div class="text-6xl font-bold text-[#34D399] mb-2" style="font-family:'Sora',sans-serif;">4.9</div>
+                <div class="flex gap-1 mb-2 justify-center">
+                    <i class="fas fa-star text-[#F59E0B]"></i>
+                    <i class="fas fa-star text-[#F59E0B]"></i>
+                    <i class="fas fa-star text-[#F59E0B]"></i>
+                    <i class="fas fa-star text-[#F59E0B]"></i>
+                    <i class="fas fa-star-half-stroke text-[#F59E0B]"></i>
+                </div>
+                <div class="text-neutral-400 text-sm">Based on 4,200+ reviews</div>
+            </div>
+            <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-4 animate-on-scroll slide-up" style="transition-delay:0.1s;">
+                <div class="rounded-2xl p-6 text-center" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);">
+                    <i class="fas fa-truck-fast text-[#34D399] text-2xl mb-3"></i>
+                    <div class="text-white font-bold mb-1">Fast Delivery</div>
+                    <div class="text-neutral-400 text-xs">97% on-time rate</div>
+                </div>
+                <div class="rounded-2xl p-6 text-center" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);">
+                    <i class="fas fa-certificate text-[#34D399] text-2xl mb-3"></i>
+                    <div class="text-white font-bold mb-1">Genuine Products</div>
+                    <div class="text-neutral-400 text-xs">100% verified stock</div>
+                </div>
+                <div class="rounded-2xl p-6 text-center" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);">
+                    <i class="fas fa-headset text-[#34D399] text-2xl mb-3"></i>
+                    <div class="text-white font-bold mb-1">Expert Support</div>
+                    <div class="text-neutral-400 text-xs">Pharmacist always available</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="py-20" style="background:linear-gradient(135deg,#059669 0%,#047857 50%,#065F46 100%);">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 bg-white/10 mb-6 animate-on-scroll slide-up">
+            <i class="fas fa-sparkles text-white text-xs"></i>
+            <span class="text-white text-xs font-bold uppercase tracking-[0.2em]">Join MediCare Premium</span>
+        </div>
+        <h2 class="text-white mb-4 animate-on-scroll slide-up" style="font-family:'Sora',sans-serif;">Start Your Premium<br>Healthcare Journey Today</h2>
+        <p class="text-white/75 text-lg mb-10 animate-on-scroll slide-up" style="transition-delay:0.1s;">Join 25,000+ families who trust MediCare for all their healthcare needs — medicines, devices, baby care and expert advice.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll slide-up" style="transition-delay:0.2s;">
+            <a href="signup.html" class="btn btn-lg" style="background:white;color:#059669;border-radius:50px;font-weight:700;" id="h2-cta-join">
+                <i class="fas fa-crown text-sm"></i> Get Premium Access
+            </a>
+            <a href="products.html" class="btn btn-lg" style="border:2px solid white;color:white;border-radius:50px;" id="h2-cta-shop">
+                <i class="fas fa-shopping-bag text-sm"></i> Shop Products
+            </a>
         </div>
     </div>
 </section>
