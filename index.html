@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MediCare — Your trusted pharmacy & medical store. Medicines, health devices, baby care products & home delivery. Upload prescription online.">
+    <title>MediCare | Your Trusted Pharmacy & Medical Store</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23059669' fill-opacity='0.15' stroke='%23059669' stroke-width='2'/%3E%3Crect x='42' y='22' width='16' height='56' rx='4' fill='%23059669'/%3E%3Crect x='22' y='42' width='56' height='16' rx='4' fill='%23059669'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#059669',secondary:'#0F172A'}}}}</script>
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar-container"></div>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero relative min-h-screen flex items-center overflow-hidden" style="background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 50%, #F0FDF4 100%);">
+    <!-- Background decorations -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute w-[800px] h-[800px] rounded-full" style="background:radial-gradient(circle,rgba(5,150,105,0.08) 0%,transparent 70%);top:-300px;right:-300px;"></div>
+        <div class="absolute w-[500px] h-[500px] rounded-full" style="background:radial-gradient(circle,rgba(5,150,105,0.05) 0%,transparent 70%);bottom:-200px;left:-150px;"></div>
+        <!-- Grid pattern -->
+        <div class="absolute inset-0" style="background-image:linear-gradient(rgba(5,150,105,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(5,150,105,0.04) 1px,transparent 1px);background-size:48px 48px;"></div>
+    </div>
+
+    <div class="dark:hidden absolute inset-0" style="background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 50%, #F0FDF4 100%);"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-24 pt-32">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Left: Text Content -->
+            <div class="text-center lg:text-left animate-on-scroll slide-up">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#059669]/25 bg-[#059669]/8 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-[#059669] animate-pulse"></span>
+                    <span class="text-[#047857] dark:text-[#34D399] text-xs font-bold uppercase tracking-[0.2em]">Trusted Since 2005</span>
+                </div>
+
+                <h1 class="text-[#0F172A] dark:text-white mb-6 leading-tight">
+                    Your Health,<br>
+                    <span class="green-text">Our Priority</span>
+                </h1>
+
+                <p class="text-neutral-600 dark:text-neutral-400 text-lg mb-8 max-w-xl mx-auto lg:mx-0">
+                    Quality medicines, health devices, and baby care products — all under one roof. Enjoy fast home delivery with a prescription upload option for your convenience.
+                </p>
+
+                <!-- Store Timing badge -->
+                <div class="inline-flex items-center gap-3 px-5 py-3 rounded-2xl bg-white dark:bg-[#0D2318] border border-[#D1FAE5] dark:border-[#1A3D2A] shadow-sm mb-8 text-sm text-neutral-600 dark:text-neutral-400 mx-auto lg:mx-0">
+                    <i class="fas fa-clock text-[#059669]"></i>
+                    <span>Mon–Sat: 8AM–9PM &nbsp;|&nbsp; Sun: 9AM–6PM</span>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="contact.html#prescription" class="btn btn-primary btn-lg" id="hero-upload-rx">
+                        <i class="fas fa-file-medical text-sm"></i>
+                        Upload Prescription
+                    </a>
+                    <a href="services.html" class="btn btn-secondary btn-lg" id="hero-services">
+                        <i class="fas fa-grid-2 text-sm"></i>
+                        Our Services
+                    </a>
+                </div>
+
+                <!-- Stats Row -->
+                <div class="flex gap-8 mt-12 justify-center lg:justify-start">
+                    <div class="text-center lg:text-left">
+                        <div class="text-2xl font-bold text-[#059669] font-sora" data-counter data-target="15000" data-suffix="+">0+</div>
+                        <div class="text-xs text-neutral-500 uppercase tracking-wider mt-1">Products</div>
+                    </div>
+                    <div class="w-px bg-[#D1FAE5] dark:bg-[#1A3D2A]"></div>
+                    <div class="text-center lg:text-left">
+                        <div class="text-2xl font-bold text-[#059669] font-sora" data-counter data-target="25000" data-suffix="+">0+</div>
+                        <div class="text-xs text-neutral-500 uppercase tracking-wider mt-1">Customers</div>
+                    </div>
+                    <div class="w-px bg-[#D1FAE5] dark:bg-[#1A3D2A]"></div>
+                    <div class="text-center lg:text-left">
+                        <div class="text-2xl font-bold text-[#059669] font-sora" data-counter data-target="20" data-suffix="+">0+</div>
+                        <div class="text-xs text-neutral-500 uppercase tracking-wider mt-1">Years</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Hero Image -->
+            <div class="relative animate-on-scroll slide-left hidden lg:block">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#059669]/20" style="animation: float 6s ease-in-out infinite;">
+                    <img src="assets/images/hero.png" alt="MediCare Pharmacy Store Interior" class="w-full h-[520px] object-cover">
+                    <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(5,150,105,0.3) 0%, transparent 50%);"></div>
+                </div>
+
+                <!-- Floating cards -->
+                <div class="absolute -bottom-6 -left-8 bg-white dark:bg-[#0D2318] rounded-2xl p-4 shadow-xl border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#059669]/10 flex items-center justify-center">
+                            <i class="fas fa-truck text-[#059669]"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-[#0F172A] dark:text-white">Free Delivery</div>
+                            <div class="text-xs text-neutral-500">Orders above ₹500</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="absolute -top-4 -right-6 bg-white dark:bg-[#0D2318] rounded-2xl p-4 shadow-xl border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-[#059669]/10 flex items-center justify-center">
+                            <i class="fas fa-shield-halved text-[#059669]"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-[#0F172A] dark:text-white">100% Genuine</div>
+                            <div class="text-xs text-neutral-500">Certified products</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PRODUCT CATEGORIES ===== -->
+<section class="py-24 bg-white dark:bg-[#0D2318]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <!-- Header -->
+        <div class="text-center mb-16 animate-on-scroll slide-up">
+            <div class="section-tag mx-auto">
+                <i class="fas fa-th-large text-xs"></i> Product Categories
+            </div>
+            <h2 class="section-title">Everything You Need<br>For Better Health</h2>
+            <p class="section-subtitle mx-auto text-center">From prescription medicines to baby care — we stock over 15,000 products from trusted brands.</p>
+        </div>
+
+        <!-- Categories Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Medicines -->
+            <div class="card animate-on-scroll slide-up" style="transition-delay:0.1s;">
+                <div class="relative overflow-hidden h-56">
+                    <img src="assets/images/medicines.png" alt="Medicines & Tablets" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(5,150,105,0.6) 0%, transparent 60%);"></div>
+                    <div class="absolute top-4 left-4">
+                        <span class="badge badge-green">Prescription & OTC</span>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <div class="w-12 h-12 rounded-2xl bg-[#059669]/10 flex items-center justify-center mb-4">
+                        <i class="fas fa-capsules text-[#059669] text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-[#0F172A] dark:text-white mb-2 text-xl">Medicines</h3>
+                    <p class="text-neutral-500 dark:text-neutral-400 text-sm flex-1">Tablets, capsules, syrups, injections, vitamins & supplements from certified manufacturers.</p>
+                    <a href="products.html" class="mt-4 inline-flex items-center gap-2 text-[#059669] font-semibold text-sm hover:gap-3 transition-all">
+                        Browse Medicines <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Health Devices -->
+            <div class="card animate-on-scroll slide-up" style="transition-delay:0.2s;">
+                <div class="relative overflow-hidden h-56">
+                    <img src="assets/images/health-devices.png" alt="Health Monitoring Devices" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(5,150,105,0.6) 0%, transparent 60%);"></div>
+                    <div class="absolute top-4 left-4">
+                        <span class="badge badge-info">Digital & Analog</span>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <div class="w-12 h-12 rounded-2xl bg-[#059669]/10 flex items-center justify-center mb-4">
+                        <i class="fas fa-heart-pulse text-[#059669] text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-[#0F172A] dark:text-white mb-2 text-xl">Health Devices</h3>
+                    <p class="text-neutral-500 dark:text-neutral-400 text-sm flex-1">Blood pressure monitors, glucometers, thermometers, pulse oximeters & more equipment.</p>
+                    <a href="products.html" class="mt-4 inline-flex items-center gap-2 text-[#059669] font-semibold text-sm hover:gap-3 transition-all">
+                        Browse Devices <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Baby Care -->
+            <div class="card animate-on-scroll slide-up" style="transition-delay:0.3s;">
+                <div class="relative overflow-hidden h-56">
+                    <img src="assets/images/baby-care.png" alt="Baby Care Products" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                    <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(5,150,105,0.6) 0%, transparent 60%);"></div>
+                    <div class="absolute top-4 left-4">
+                        <span class="badge badge-warning">Safe & Certified</span>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <div class="w-12 h-12 rounded-2xl bg-[#059669]/10 flex items-center justify-center mb-4">
+                        <i class="fas fa-baby text-[#059669] text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-[#0F172A] dark:text-white mb-2 text-xl">Baby Care</h3>
+                    <p class="text-neutral-500 dark:text-neutral-400 text-sm flex-1">Baby formula, diapers, lotions, medicines, feeding accessories & all essentials for your little one.</p>
+                    <a href="products.html" class="mt-4 inline-flex items-center gap-2 text-[#059669] font-semibold text-sm hover:gap-3 transition-all">
+                        Browse Baby Care <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section class="py-24" style="background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16 animate-on-scroll slide-up">
+            <div class="section-tag mx-auto">
+                <i class="fas fa-star text-xs"></i> Why MediCare
+            </div>
+            <h2 class="section-title">Trusted by 25,000+<br>Families Across the City</h2>
+            <p class="section-subtitle mx-auto text-center">We combine genuine medicines, expert pharmacists and fast delivery to give you a complete healthcare experience.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Feature 1 -->
+            <div class="glass-card p-6 text-center animate-on-scroll slide-up" style="transition-delay:0.1s;">
+                <div class="w-16 h-16 rounded-2xl bg-[#059669]/12 flex items-center justify-center mx-auto mb-5 border border-[#059669]/20">
+                    <i class="fas fa-certificate text-[#059669] text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-2">100% Genuine</h4>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">All medicines directly sourced from authorized distributors. Zero counterfeit risk.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="glass-card p-6 text-center animate-on-scroll slide-up" style="transition-delay:0.2s;">
+                <div class="w-16 h-16 rounded-2xl bg-[#059669]/12 flex items-center justify-center mx-auto mb-5 border border-[#059669]/20">
+                    <i class="fas fa-truck-fast text-[#059669] text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-2">Delivery</h4>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">Order before 3 PM and get your medicines delivered the same day within city limits.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="glass-card p-6 text-center animate-on-scroll slide-up" style="transition-delay:0.3s;">
+                <div class="w-16 h-16 rounded-2xl bg-[#059669]/12 flex items-center justify-center mx-auto mb-5 border border-[#059669]/20">
+                    <i class="fas fa-user-doctor text-[#059669] text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-2">Expert</h4>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">Our team of licensed pharmacists is available to answer your queries anytime.</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="glass-card p-6 text-center animate-on-scroll slide-up" style="transition-delay:0.4s;">
+                <div class="w-16 h-16 rounded-2xl bg-[#059669]/12 flex items-center justify-center mx-auto mb-5 border border-[#059669]/20">
+                    <i class="fas fa-tag text-[#059669] text-2xl"></i>
+                </div>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-2">Best Prices</h4>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400">Competitive pricing with exclusive member discounts, cashback and combo offers.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== HOME DELIVERY SECTION ===== -->
+<section class="py-24 bg-white dark:bg-[#0D2318]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Image -->
+            <div class="relative animate-on-scroll slide-right">
+                <div class="rounded-3xl overflow-hidden shadow-2xl shadow-[#059669]/15">
+                    <img src="assets/images/delivery.png" alt="Home Delivery Service" class="w-full h-[480px] object-cover">
+                </div>
+                <!-- Overlay card -->
+                <div class="absolute bottom-8 right-0 translate-x-4 bg-white dark:bg-[#0D2318] rounded-2xl p-5 shadow-xl border border-[#D1FAE5] dark:border-[#1A3D2A] max-w-[200px]">
+                    <div class="text-3xl font-bold text-[#059669] mb-1" style="font-family:'Sora',sans-serif;">2h</div>
+                    <div class="text-sm font-semibold text-[#0F172A] dark:text-white">Express Delivery</div>
+                    <div class="text-xs text-neutral-500 mt-1">Within city limits</div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="animate-on-scroll slide-left">
+                <div class="section-tag">
+                    <i class="fas fa-truck-fast text-xs"></i> Home Delivery
+                </div>
+                <h2 class="section-title">Medicine Delivered<br>To Your Doorstep</h2>
+                <p class="text-neutral-500 dark:text-neutral-400 mb-8">
+                    Skip the queue — get your medicines, health devices and baby care products delivered right to your home. Upload your prescription and we'll take care of the rest.
+                </p>
+
+                <div class="space-y-5 mb-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-[#059669]/10 flex items-center justify-center shrink-0 mt-0.5">
+                            <i class="fas fa-check text-[#059669]"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-[#0F172A] dark:text-white mb-1">Free delivery on orders above ₹500</div>
+                            <div class="text-sm text-neutral-500">No minimum for prescription orders</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-[#059669]/10 flex items-center justify-center shrink-0 mt-0.5">
+                            <i class="fas fa-check text-[#059669]"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-[#0F172A] dark:text-white mb-1">Same-day delivery before 3 PM</div>
+                            <div class="text-sm text-neutral-500">Available 6 days a week</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-[#059669]/10 flex items-center justify-center shrink-0 mt-0.5">
+                            <i class="fas fa-check text-[#059669]"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-[#0F172A] dark:text-white mb-1">Live tracking & SMS updates</div>
+                            <div class="text-sm text-neutral-500">Know exactly when your order arrives</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="contact.html#prescription" class="btn btn-primary" id="delivery-upload-rx">
+                        <i class="fas fa-file-upload text-sm"></i> Upload Prescription
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary" id="delivery-contact">
+                        <i class="fas fa-phone text-sm"></i> Call Us Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PRESCRIPTION ENQUIRY FORM ===== -->
+<section id="prescription-form" class="py-24" style="background: linear-gradient(135deg, #059669 0%, #047857 50%, #065F46 100%);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Left: Info -->
+            <div class="text-center lg:text-left animate-on-scroll slide-right">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 bg-white/10 mb-6">
+                    <i class="fas fa-file-prescription text-white text-xs"></i>
+                    <span class="text-white text-xs font-bold uppercase tracking-[0.2em]">Upload Prescription</span>
+                </div>
+                <h2 class="text-white mb-4" style="font-family:'Sora',sans-serif;">Have a Prescription?<br>We'll Handle It</h2>
+                <p class="text-white/75 text-lg mb-8">Simply upload your prescription, choose home delivery or store pickup, and we'll prepare your order within minutes.</p>
+
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white font-bold text-sm shrink-0">1</div>
+                        <span class="text-white/85">Upload your prescription image or PDF</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white font-bold text-sm shrink-0">2</div>
+                        <span class="text-white/85">Our pharmacist verifies & prepares your order</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white font-bold text-sm shrink-0">3</div>
+                        <span class="text-white/85">Get medicines delivered or pick up from store</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Form -->
+            <div class="animate-on-scroll slide-left">
+                <div class="bg-white dark:bg-[#0D2318] rounded-3xl p-8 shadow-2xl">
+                    <h3 class="font-bold text-[#0F172A] dark:text-white mb-6 text-xl" style="font-family:'Sora',sans-serif;">Prescription Enquiry</h3>
+                    <form id="prescription-enquiry-form" onsubmit="handlePrescriptionSubmit(event)" class="space-y-5">
+                        <div class="form-group">
+                            <label class="form-label" for="rx-name">Full Name</label>
+                            <input type="text" id="rx-name" class="form-input" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="rx-phone">Phone Number</label>
+                            <input type="tel" id="rx-phone" class="form-input" placeholder="+91 98400 XXXXX" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="rx-address">Delivery Address</label>
+                            <input type="text" id="rx-address" class="form-input" placeholder="House/Flat No, Street, Area, City">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="rx-delivery">Delivery Option</label>
+                            <select id="rx-delivery" class="form-input">
+                                <option value="home">Home Delivery</option>
+                                <option value="pickup">Store Pickup</option>
+                            </select>
+                        </div>
+                        <!-- File upload -->
+                        <div class="form-group">
+                            <label class="form-label">Upload Prescription (Image/PDF)</label>
+                            <label class="flex items-center gap-3 px-4 py-4 border-2 border-dashed border-[#D1FAE5] dark:border-[#1A3D2A] rounded-xl cursor-pointer hover:border-[#059669] transition-colors bg-[#F0FDF4] dark:bg-[#122B1E]">
+                                <i class="fas fa-cloud-arrow-up text-[#059669] text-xl"></i>
+                                <span id="file-label" class="text-sm text-neutral-500 dark:text-neutral-400">Click to upload or drag & drop</span>
+                                <input type="file" id="prescription-file" accept="image/*,.pdf" class="hidden">
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="rx-notes">Additional Notes</label>
+                            <textarea id="rx-notes" class="form-input" rows="3" placeholder="Any specific requirements or notes..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="rx-submit">
+                            <i class="fas fa-paper-plane text-sm"></i> Submit Enquiry
+                        </button>
+                    </form>
+                    <p id="rx-success" class="hidden text-center text-[#059669] font-semibold mt-4">
+                        <i class="fas fa-circle-check"></i> Enquiry submitted! We'll contact you within 30 minutes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== STORE INFO ===== -->
+<section class="py-24 bg-white dark:bg-[#0D2318]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16 animate-on-scroll slide-up">
+            <div class="section-tag mx-auto">
+                <i class="fas fa-store text-xs"></i> Visit Us
+            </div>
+            <h2 class="section-title">Find Us & Store Timings</h2>
+            <p class="section-subtitle mx-auto text-center">We're conveniently located and open 7 days a week to serve all your healthcare needs.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Address -->
+            <div class="glass-card p-8 text-center animate-on-scroll slide-up" style="transition-delay:0.1s;">
+                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-5">
+                    <i class="fas fa-map-marker-alt text-[#059669] text-xl"></i>
+                </div>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-3">Store Location</h4>
+                <p class="text-neutral-500 dark:text-neutral-400 text-sm">14 Health Avenue,<br>Near City Hospital,<br>Chennai, TN 600001</p>
+                <a href="https://maps.google.com" target="_blank" class="mt-4 inline-flex items-center gap-2 text-[#059669] text-sm font-semibold hover:underline">
+                    Get Directions <i class="fas fa-external-link text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Store Timings -->
+            <div class="glass-card p-8 text-center animate-on-scroll slide-up" style="transition-delay:0.2s;">
+                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-5">
+                    <i class="fas fa-clock text-[#059669] text-xl"></i>
+                </div>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-3">Store Timings</h4>
+                <div class="space-y-2 text-sm text-neutral-500 dark:text-neutral-400">
+                    <div class="flex justify-between px-4">
+                        <span>Monday – Friday</span>
+                        <span class="text-[#059669] font-semibold">8AM – 9PM</span>
+                    </div>
+                    <div class="flex justify-between px-4">
+                        <span>Saturday</span>
+                        <span class="text-[#059669] font-semibold">8AM – 9PM</span>
+                    </div>
+                    <div class="flex justify-between px-4">
+                        <span>Sunday</span>
+                        <span class="text-[#059669] font-semibold">9AM – 6PM</span>
+                    </div>
+                </div>
+               
+            </div>
+
+            <!-- Contact -->
+            <div class="glass-card p-8 text-center animate-on-scroll slide-up" style="transition-delay:0.3s;">
+                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-5">
+                    <i class="fas fa-phone-volume text-[#059669] text-xl"></i>
+                </div>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-3">Contact Us</h4>
+                <div class="space-y-2 text-sm text-neutral-500 dark:text-neutral-400">
+                    <p><i class="fas fa-phone mr-2 text-[#059669]"></i>+91 98400 12345</p>
+                    <p><i class="fas fa-envelope mr-2 text-[#059669]"></i>care@medicare-pharmacy.com</p>
+                    <p><i class="fab fa-whatsapp mr-2 text-[#059669]"></i>WhatsApp: +91 98400 12345</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="py-24" style="background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16 animate-on-scroll slide-up">
+            <div class="section-tag mx-auto">
+                <i class="fas fa-comments text-xs"></i> Testimonials
+            </div>
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle mx-auto text-center">Real stories from real customers who trust MediCare for their healthcare needs.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="card p-6 animate-on-scroll slide-up" style="transition-delay:0.1s;">
+                <div class="flex gap-1 mb-4">
+                    <i class="fas fa-star text-[#F59E0B] text-sm"></i>
+                    <i class="fas fa-star text-[#F59E0B] text-sm"></i>
+                    <i class="fas fa-star text-[#F59E0B] text-sm"></i>
+                    <i class="fas fa-star text-[#F59E0B] text-sm"></i>
+                    <i class="fas fa-star text-[#F59E0B] text-sm"></i>
+                </div>
+                <p class="text-neutral-600 dark:text-neutral-400 text-sm italic mb-5">"MediCare's home delivery is a lifesaver. I uploaded my prescription and got my medicines within 2 hours. The pharmacist even called to clarify.!"</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-[#059669]/15 flex items-center justify-center text-[#059669] font-bold">P</div>
+                    <div>
+                        <div class="font-semibold text-[#0F172A] dark:text-white text-sm">Priya Ramesh</div>
+                        <div class="text-xs text-neutral-500">Regular Customer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-6 animate-on-scroll slide-up" style="transition-delay:0.2s;">
+                <div class="flex gap-1 mb-4">
+                    <i class="fas fa-star text-[#F59E0B] text-sm"></i>
+                    <i class="fas fa-star text-[#F59E0B] text-sm"></i>
+                    <i class="fas fa-star text-[#F59E0B] text-sm"></i>
+                    <i class="fas fa-star text-[#F59E0B] text-sm"></i>
+                    <i class="fas fa-star text-[#F59E0B] text-sm"></i>
+                </div>
+                <p class="text-neutral-600 dark:text-neutral-400 text-sm italic mb-5">"Best pharmacy in the city! They have a huge stock of baby care products and the staff always recommends the right and good products for my toddler."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-[#059669]/15 flex items-center justify-center text-[#059669] font-bold">A</div>
+                    <div>
+                        <div class="font-semibold text-[#0F172A] dark:text-white text-sm">Anita Krishnan</div>
+                        <div class="text-xs text-neutral-500">Mother of 2</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-6 animate-on-scroll slide-up" style="transition-delay:0.3s;">
+                <div class="flex gap-1 mb-4">
+                    <i class="fas fa-star text-[#F59E0B] text-sm"></i>
+                    <i class="fas fa-star text-[#F59E0B] text-sm"></i>
+                    <i class="fas fa-star text-[#F59E0B] text-sm"></i>
+                    <i class="fas fa-star text-[#F59E0B] text-sm"></i>
+                    <i class="fas fa-star-half-stroke text-[#F59E0B] text-sm"></i>
+                </div>
+                <p class="text-neutral-600 dark:text-neutral-400 text-sm italic mb-5">"Got my blood pressure monitor from here at a great price. The pharmacist explained how to use it properly. MediCare is my go-to for all health device needs!"</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-[#059669]/15 flex items-center justify-center text-[#059669] font-bold">R</div>
+                    <div>
+                        <div class="font-semibold text-[#0F172A] dark:text-white text-sm">Rajan Pillai</div>
+                        <div class="text-xs text-neutral-500">Senior Citizen</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<div id="footer-container"></div>
+
+<script src="components.js"></script>
+<script src="script.js"></script>
+<script>
+function handlePrescriptionSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('rx-submit');
+    btn.innerHTML = '<i class="fas fa-circle-notch fa-spin text-sm"></i> Submitting...';
+    btn.disabled = true;
+    setTimeout(() => {
+        document.getElementById('prescription-enquiry-form').classList.add('hidden');
+        document.getElementById('rx-success').classList.remove('hidden');
+    }, 1800);
+}
+</script>
+</body>
+</html>

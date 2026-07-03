@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MediCare Products — Browse medicines, health devices, baby care and wellness products. 15,000+ genuine products from top brands.">
+    <title>Products | MediCare Pharmacy & Medical Store</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23059669' fill-opacity='0.15' stroke='%23059669' stroke-width='2'/%3E%3Crect x='42' y='22' width='16' height='56' rx='4' fill='%23059669'/%3E%3Crect x='22' y='42' width='56' height='16' rx='4' fill='%23059669'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#059669',secondary:'#0F172A'}}}}</script>
+</head>
+<body>
+
+<div id="navbar-container"></div>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="relative py-28 overflow-hidden" style="background:linear-gradient(135deg,#F0FDF4 0%,#DCFCE7 100%);">
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute w-[600px] h-[600px] rounded-full" style="background:radial-gradient(circle,rgba(5,150,105,0.09) 0%,transparent 70%);top:-200px;right:-150px;"></div>
+        <div class="absolute inset-0" style="background-image:linear-gradient(rgba(5,150,105,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(5,150,105,0.04) 1px,transparent 1px);background-size:48px 48px;"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
+        <div class="section-tag mx-auto animate-on-scroll slide-up">
+            <i class="fas fa-box-open text-xs"></i> Products
+        </div>
+        <h1 class="animate-on-scroll slide-up text-[#0F172A] dark:text-white" style="transition-delay:0.1s;">15,000+ Products<br><span class="green-text">Genuine & Certified</span></h1>
+        <p class="section-subtitle mx-auto text-center mt-4 animate-on-scroll slide-up" style="transition-delay:0.2s;">Medicines, health devices, baby care and wellness products — all from authorized brands.</p>
+    </div>
+</section>
+
+<!-- ===== CATEGORY TABS ===== -->
+<section class="py-24 bg-white dark:bg-[#0D2318]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <!-- Tab Bar -->
+        <div class="flex flex-wrap justify-center gap-3 mb-14 animate-on-scroll slide-up" data-tabs>
+            <div class="tab-bar flex flex-wrap justify-center gap-3">
+                <button class="tab-btn active px-6 py-2.5 rounded-full text-sm font-bold border-2 border-[#059669] bg-[#059669] text-white transition-all" data-tab="medicines" id="tab-medicines">
+                    <i class="fas fa-capsules mr-2"></i>Medicines
+                </button>
+                <button class="tab-btn px-6 py-2.5 rounded-full text-sm font-bold border-2 border-[#D1FAE5] dark:border-[#1A3D2A] text-neutral-600 dark:text-neutral-400 hover:border-[#059669] hover:text-[#059669] transition-all" data-tab="devices" id="tab-devices">
+                    <i class="fas fa-heart-pulse mr-2"></i>Health Devices
+                </button>
+                <button class="tab-btn px-6 py-2.5 rounded-full text-sm font-bold border-2 border-[#D1FAE5] dark:border-[#1A3D2A] text-neutral-600 dark:text-neutral-400 hover:border-[#059669] hover:text-[#059669] transition-all" data-tab="baby" id="tab-baby">
+                    <i class="fas fa-baby mr-2"></i>Baby Care
+                </button>
+                <button class="tab-btn px-6 py-2.5 rounded-full text-sm font-bold border-2 border-[#D1FAE5] dark:border-[#1A3D2A] text-neutral-600 dark:text-neutral-400 hover:border-[#059669] hover:text-[#059669] transition-all" data-tab="wellness" id="tab-wellness">
+                    <i class="fas fa-leaf mr-2"></i>Wellness
+                </button>
+            </div>
+        </div>
+
+        <!-- Medicines Tab -->
+        <div data-tab-content="medicines">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product Cards -->
+                <div class="card p-5 animate-on-scroll slide-up" style="transition-delay:0.1s;">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] dark:from-[#122B1E] dark:to-[#0D2318] flex items-center justify-center mb-4 border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                        <i class="fas fa-tablets text-[#059669] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-green mb-2">Prescription</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">Antibiotics Range</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Amoxicillin, Azithromycin, Ciprofloxacin & more</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">From ₹45</span>
+                        <a href="contact.html#prescription" class="text-xs text-[#059669] font-semibold hover:underline">Upload Rx →</a>
+                    </div>
+                </div>
+
+                <div class="card p-5 animate-on-scroll slide-up" style="transition-delay:0.2s;">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] dark:from-[#122B1E] dark:to-[#0D2318] flex items-center justify-center mb-4 border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                        <i class="fas fa-pills text-[#059669] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-success mb-2">OTC</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">Pain Relief</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Paracetamol, Ibuprofen, Diclofenac & topical gels</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">From ₹18</span>
+                        <a href="contact.html" class="text-xs text-[#059669] font-semibold hover:underline">Order Now →</a>
+                    </div>
+                </div>
+
+                <div class="card p-5 animate-on-scroll slide-up" style="transition-delay:0.3s;">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] dark:from-[#122B1E] dark:to-[#0D2318] flex items-center justify-center mb-4 border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                        <i class="fas fa-syringe text-[#059669] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-warning mb-2">Refrigerated</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">Vaccines & Injections</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Flu vaccines, insulin, vitamin B12 injections</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">Enquire</span>
+                        <a href="contact.html" class="text-xs text-[#059669] font-semibold hover:underline">Contact Us →</a>
+                    </div>
+                </div>
+
+                <div class="card p-5 animate-on-scroll slide-up" style="transition-delay:0.4s;">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] dark:from-[#122B1E] dark:to-[#0D2318] flex items-center justify-center mb-4 border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                        <i class="fas fa-seedling text-[#059669] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-green mb-2">Ayurvedic</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">Herbal & Ayurvedic</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Chyawanprash, Ashwagandha, Triphala & more</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">From ₹120</span>
+                        <a href="contact.html" class="text-xs text-[#059669] font-semibold hover:underline">Order Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Devices Tab -->
+        <div data-tab-content="devices" class="hidden">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card p-5 animate-on-scroll slide-up">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] dark:from-[#122B1E] dark:to-[#0D2318] flex items-center justify-center mb-4 border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                        <i class="fas fa-heart-pulse text-[#059669] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-info mb-2">Omron / Dr. Morepen</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">BP Monitors</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Digital blood pressure monitors, upper arm & wrist types</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">From ₹1,299</span>
+                        <a href="contact.html" class="text-xs text-[#059669] font-semibold hover:underline">Order →</a>
+                    </div>
+                </div>
+
+                <div class="card p-5 animate-on-scroll slide-up" style="transition-delay:0.1s;">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] dark:from-[#122B1E] dark:to-[#0D2318] flex items-center justify-center mb-4 border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                        <i class="fas fa-droplet text-[#059669] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-info mb-2">Accu-Chek / OneTouch</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">Glucometers</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Blood glucose monitors with test strips & lancets</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">From ₹799</span>
+                        <a href="contact.html" class="text-xs text-[#059669] font-semibold hover:underline">Order →</a>
+                    </div>
+                </div>
+
+                <div class="card p-5 animate-on-scroll slide-up" style="transition-delay:0.2s;">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] dark:from-[#122B1E] dark:to-[#0D2318] flex items-center justify-center mb-4 border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                        <i class="fas fa-temperature-half text-[#059669] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-info mb-2">Digital</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">Thermometers</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Digital, infrared forehead & ear thermometers</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">From ₹349</span>
+                        <a href="contact.html" class="text-xs text-[#059669] font-semibold hover:underline">Order →</a>
+                    </div>
+                </div>
+
+                <div class="card p-5 animate-on-scroll slide-up" style="transition-delay:0.3s;">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] dark:from-[#122B1E] dark:to-[#0D2318] flex items-center justify-center mb-4 border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                        <i class="fas fa-lungs text-[#059669] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-info mb-2">Nebulizers</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">Respiratory Devices</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Nebulizers, steam inhalers, peak flow meters</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">From ₹1,899</span>
+                        <a href="contact.html" class="text-xs text-[#059669] font-semibold hover:underline">Order →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Baby Care Tab -->
+        <div data-tab-content="baby" class="hidden">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card p-5 animate-on-scroll slide-up">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] flex items-center justify-center mb-4 border border-[#FDE68A]">
+                        <i class="fas fa-baby text-[#D97706] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-warning mb-2">Nutrition</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">Baby Formula</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Infant formula from Nestlé, Abbott, Danone & more brands</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">From ₹350</span>
+                        <a href="contact.html" class="text-xs text-[#059669] font-semibold hover:underline">Order →</a>
+                    </div>
+                </div>
+
+                <div class="card p-5 animate-on-scroll slide-up" style="transition-delay:0.1s;">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] flex items-center justify-center mb-4 border border-[#FDE68A]">
+                        <i class="fas fa-pump-soap text-[#D97706] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-warning mb-2">Skin Care</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">Baby Skin Care</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Moisturizers, oils, shampoos, powders — gentle & safe</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">From ₹85</span>
+                        <a href="contact.html" class="text-xs text-[#059669] font-semibold hover:underline">Order →</a>
+                    </div>
+                </div>
+
+                <div class="card p-5 animate-on-scroll slide-up" style="transition-delay:0.2s;">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] flex items-center justify-center mb-4 border border-[#FDE68A]">
+                        <i class="fas fa-syringe text-[#D97706] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-warning mb-2">Pediatric</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">Baby Medicines</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Infant syrups, drops, gripe water, colic relief & more</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">From ₹50</span>
+                        <a href="contact.html#prescription" class="text-xs text-[#059669] font-semibold hover:underline">Upload Rx →</a>
+                    </div>
+                </div>
+
+                <div class="card p-5 animate-on-scroll slide-up" style="transition-delay:0.3s;">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#FFFBEB] to-[#FEF3C7] flex items-center justify-center mb-4 border border-[#FDE68A]">
+                        <i class="fas fa-box text-[#D97706] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-warning mb-2">Accessories</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">Feeding Accessories</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Feeding bottles, nipples, sterilizers, bibs & breast pumps</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">From ₹180</span>
+                        <a href="contact.html" class="text-xs text-[#059669] font-semibold hover:underline">Order →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wellness Tab -->
+        <div data-tab-content="wellness" class="hidden">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card p-5 animate-on-scroll slide-up">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] dark:from-[#122B1E] dark:to-[#0D2318] flex items-center justify-center mb-4 border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                        <i class="fas fa-apple-whole text-[#059669] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-green mb-2">Vitamins</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">Vitamins & Minerals</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Vitamin C, D3, B12, Zinc, Iron, Calcium supplements</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">From ₹120</span>
+                        <a href="contact.html" class="text-xs text-[#059669] font-semibold hover:underline">Order →</a>
+                    </div>
+                </div>
+
+                <div class="card p-5 animate-on-scroll slide-up" style="transition-delay:0.1s;">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] dark:from-[#122B1E] dark:to-[#0D2318] flex items-center justify-center mb-4 border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                        <i class="fas fa-dumbbell text-[#059669] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-green mb-2">Fitness</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">Protein & Fitness</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Whey protein, BCAA, creatine, pre-workout supplements</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">From ₹799</span>
+                        <a href="contact.html" class="text-xs text-[#059669] font-semibold hover:underline">Order →</a>
+                    </div>
+                </div>
+
+                <div class="card p-5 animate-on-scroll slide-up" style="transition-delay:0.2s;">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] dark:from-[#122B1E] dark:to-[#0D2318] flex items-center justify-center mb-4 border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                        <i class="fas fa-spa text-[#059669] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-green mb-2">Personal Care</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">Health & Personal Care</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Skincare, haircare, oral hygiene & personal hygiene products</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">From ₹65</span>
+                        <a href="contact.html" class="text-xs text-[#059669] font-semibold hover:underline">Order →</a>
+                    </div>
+                </div>
+
+                <div class="card p-5 animate-on-scroll slide-up" style="transition-delay:0.3s;">
+                    <div class="w-full h-36 rounded-xl bg-gradient-to-br from-[#F0FDF4] to-[#DCFCE7] dark:from-[#122B1E] dark:to-[#0D2318] flex items-center justify-center mb-4 border border-[#D1FAE5] dark:border-[#1A3D2A]">
+                        <i class="fas fa-leaf text-[#059669] text-4xl opacity-70"></i>
+                    </div>
+                    <span class="badge badge-green mb-2">Ayurvedic</span>
+                    <h4 class="font-bold text-[#0F172A] dark:text-white text-sm mb-1">Herbal Wellness</h4>
+                    <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-3">Ashwagandha, Turmeric, Amla, Moringa & Ayurvedic supplements</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#059669] font-bold text-sm">From ₹150</span>
+                        <a href="contact.html" class="text-xs text-[#059669] font-semibold hover:underline">Order →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Can't find product note -->
+        <div class="mt-16 text-center p-8 rounded-3xl bg-[#F0FDF4] dark:bg-[#122B1E] border border-[#D1FAE5] dark:border-[#1A3D2A] animate-on-scroll slide-up">
+            <i class="fas fa-search text-[#059669] text-3xl mb-4"></i>
+            <h3 class="font-bold text-[#0F172A] dark:text-white mb-2 text-xl" style="font-family:'Sora',sans-serif;">Can't Find What You Need?</h3>
+            <p class="text-neutral-500 dark:text-neutral-400 mb-5">We may still have it in store! Call us or upload your prescription and our pharmacists will help you.</p>
+            <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                <a href="contact.html" class="btn btn-primary" id="prod-contact">
+                    <i class="fas fa-phone text-sm"></i> Call or WhatsApp Us
+                </a>
+                <a href="contact.html#prescription" class="btn btn-secondary" id="prod-rx">
+                    <i class="fas fa-file-medical text-sm"></i> Upload Prescription
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="footer-container"></div>
+<script src="components.js"></script>
+<script src="script.js"></script>
+<script>
+// Tab switching with active styles
+document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => {
+            b.classList.remove('bg-[#059669]', 'text-white', 'border-[#059669]');
+            b.classList.add('border-[#D1FAE5]', 'text-neutral-600');
+        });
+        btn.classList.add('bg-[#059669]', 'text-white', 'border-[#059669]');
+        btn.classList.remove('border-[#D1FAE5]', 'text-neutral-600');
+    });
+});
+</script>
+</body>
+</html>

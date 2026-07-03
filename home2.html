@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MediCare Premium — Advanced healthcare solutions, personalized medicine management, wellness programs and priority home delivery. Experience premium pharmacy care.">
+    <title>MediCare Premium | Advanced Healthcare Solutions</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23059669' fill-opacity='0.15' stroke='%23059669' stroke-width='2'/%3E%3Crect x='42' y='22' width='16' height='56' rx='4' fill='%23059669'/%3E%3Crect x='22' y='42' width='56' height='16' rx='4' fill='%23059669'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#059669',secondary:'#0F172A'}}}}</script>
+    <style>
+        @keyframes glowPulse { 0%,100%{box-shadow:0 0 40px rgba(5,150,105,0.3);} 50%{box-shadow:0 0 80px rgba(5,150,105,0.5);} }
+        .glow-pulse { animation: glowPulse 3s ease-in-out infinite; }
+        @keyframes slideInBanner { from{transform:translateX(0);} to{transform:translateX(-50%);} }
+        .banner-track { animation: slideInBanner 20s linear infinite; display: flex; gap: 48px; }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar-container"></div>
+
+<!-- ===== PREMIUM HERO ===== -->
+<section class="hero relative min-h-screen flex items-center overflow-hidden" style="background: linear-gradient(145deg, #020D07 0%, #071A12 60%, #0D2318 100%);">
+    <!-- Animated background -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute w-[900px] h-[900px] rounded-full" style="background:radial-gradient(circle,rgba(5,150,105,0.12) 0%,transparent 65%);top:-350px;right:-350px;animation:orbitPulse 10s ease-in-out infinite;"></div>
+        <div class="absolute w-[600px] h-[600px] rounded-full" style="background:radial-gradient(circle,rgba(5,150,105,0.07) 0%,transparent 70%);bottom:-250px;left:-200px;animation:orbitPulse 12s ease-in-out infinite 3s;"></div>
+        <div class="absolute inset-0" style="background-image:linear-gradient(rgba(5,150,105,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(5,150,105,0.04) 1px,transparent 1px);background-size:56px 56px;"></div>
+        <!-- Floating medicine icons -->
+        <div class="absolute top-[15%] left-[5%] opacity-15" style="animation:float 8s ease-in-out infinite;">
+            <i class="fas fa-pills text-[#059669] text-4xl"></i>
+        </div>
+        <div class="absolute top-[30%] right-[8%] opacity-10" style="animation:float 10s ease-in-out infinite 2s;">
+            <i class="fas fa-heart-pulse text-[#34D399] text-5xl"></i>
+        </div>
+        <div class="absolute bottom-[20%] left-[8%] opacity-10" style="animation:float 9s ease-in-out infinite 4s;">
+            <i class="fas fa-stethoscope text-[#059669] text-4xl"></i>
+        </div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-24 pt-32">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Left -->
+            <div class="text-center lg:text-left">
+                <!-- Status badge -->
+                <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-[#059669]/30 bg-[#059669]/8 mb-8">
+                    <div class="flex gap-1">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#34D399] animate-pulse"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#34D399] animate-pulse" style="animation-delay:0.2s;"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#34D399] animate-pulse" style="animation-delay:0.4s;"></span>
+                    </div>
+                    <span class="text-[#34D399] text-xs font-bold uppercase tracking-[0.2em]">Premium Healthcare Partner</span>
+                </div>
+
+                <h1 class="text-white mb-6 leading-tight" style="font-size:clamp(2.5rem,5vw,4rem);">
+                    Elevate Your<br>
+                    <span class="green-text">Health Journey</span><br>
+                    <span class="text-white/60 text-[0.6em] font-normal" style="font-family:'Inter',sans-serif;letter-spacing:0.1em;">PERSONALIZED PHARMACY CARE</span>
+                </h1>
+
+                <p class="text-neutral-400 text-lg mb-10 max-w-lg mx-auto lg:mx-0">
+                    Experience next-level pharmacy care with personalized medicine management, wellness programs, priority home delivery and 24/7 pharmacist support.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+                    <a href="signup.html" class="btn btn-primary btn-lg glow-pulse" id="h2-get-started">
+                        <i class="fas fa-sparkles text-sm"></i> Get Premium Access
+                    </a>
+                    <a href="services.html" class="btn btn-lg" style="border:1.5px solid rgba(5,150,105,0.35);color:#34D399;border-radius:50px;" id="h2-services">
+                        <i class="fas fa-play-circle text-sm"></i> Explore Services
+                    </a>
+                </div>
+
+                <!-- Premium stats -->
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="text-center p-4 rounded-2xl" style="background:rgba(5,150,105,0.06);border:1px solid rgba(5,150,105,0.15);">
+                        <div class="text-2xl font-bold text-[#34D399]" style="font-family:'Sora',sans-serif;" data-counter data-target="15000" data-suffix="+">0+</div>
+                        <div class="text-[10px] text-neutral-500 uppercase tracking-wider mt-1">Products</div>
+                    </div>
+                    <div class="text-center p-4 rounded-2xl" style="background:rgba(5,150,105,0.06);border:1px solid rgba(5,150,105,0.15);">
+                        <div class="text-2xl font-bold text-[#34D399]" style="font-family:'Sora',sans-serif;" data-counter data-target="25" data-suffix="+">0+</div>
+                        <div class="text-[10px] text-neutral-500 uppercase tracking-wider mt-1">Years</div>
+                    </div>
+                    <div class="text-center p-4 rounded-2xl" style="background:rgba(5,150,105,0.06);border:1px solid rgba(5,150,105,0.15);">
+                        <div class="text-2xl font-bold text-[#34D399]" style="font-family:'Sora',sans-serif;">4.9</div>
+                        <div class="text-[10px] text-neutral-500 uppercase tracking-wider mt-1"><i class="fas fa-star text-[#F59E0B]"></i> Rating</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Premium Image -->
+            <div class="relative hidden lg:block">
+                <div class="relative">
+                    <div class="rounded-3xl overflow-hidden glow-pulse" style="border:2px solid rgba(5,150,105,0.3);">
+                        <img src="assets/images/hero2.png" alt="Premium Pharmacy" class="w-full h-[560px] object-cover">
+                        <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(7,26,18,0.3) 0%, transparent 50%, rgba(7,26,18,0.2) 100%);"></div>
+                    </div>
+
+                    <!-- Premium cards -->
+                    <div class="absolute -bottom-8 -left-8 bg-[#0D2318] border border-[#1A3D2A] rounded-2xl p-5 shadow-2xl">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-[#059669]/15 flex items-center justify-center">
+                                <i class="fas fa-crown text-[#34D399]"></i>
+                            </div>
+                            <div class="text-white font-bold text-sm">Premium Member</div>
+                        </div>
+                        <div class="text-xs text-neutral-400">Up to <span class="text-[#34D399] font-bold">30% off</span> on all orders</div>
+                    </div>
+
+                    <div class="absolute -top-6 -right-6 bg-[#0D2318] border border-[#1A3D2A] rounded-2xl p-4 shadow-2xl">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-[#34D399] mb-1">2h</div>
+                            <div class="text-[10px] text-neutral-400 uppercase tracking-widest">Priority Delivery</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SCROLLING TRUST BANNER ===== -->
+<section class="py-6 bg-[#059669] overflow-hidden">
+    <div class="flex overflow-hidden">
+        <div class="banner-track whitespace-nowrap">
+            <span class="text-white text-sm font-semibold uppercase tracking-widest">✦ 100% Genuine Medicines</span>
+            <span class="text-white/50 text-sm">◆</span>
+            <span class="text-white text-sm font-semibold uppercase tracking-widest">✦ Same Day Delivery</span>
+            <span class="text-white/50 text-sm">◆</span>
+            <span class="text-white text-sm font-semibold uppercase tracking-widest">✦ Licensed Pharmacists</span>
+            <span class="text-white/50 text-sm">◆</span>
+            <span class="text-white text-sm font-semibold uppercase tracking-widest">✦ Prescription Upload Available</span>
+            <span class="text-white/50 text-sm">◆</span>
+            <span class="text-white text-sm font-semibold uppercase tracking-widest">✦ Baby Care Specialists</span>
+            <span class="text-white/50 text-sm">◆</span>
+            <span class="text-white text-sm font-semibold uppercase tracking-widest">✦ Health Devices In Stock</span>
+            <span class="text-white/50 text-sm">◆</span>
+            <!-- duplicate for infinite scroll -->
+            <span class="text-white text-sm font-semibold uppercase tracking-widest">✦ 100% Genuine Medicines</span>
+            <span class="text-white/50 text-sm">◆</span>
+            <span class="text-white text-sm font-semibold uppercase tracking-widest">✦ Same Day Delivery</span>
+            <span class="text-white/50 text-sm">◆</span>
+            <span class="text-white text-sm font-semibold uppercase tracking-widest">✦ Licensed Pharmacists</span>
+            <span class="text-white/50 text-sm">◆</span>
+            <span class="text-white text-sm font-semibold uppercase tracking-widest">✦ Prescription Upload Available</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PREMIUM SERVICES ===== -->
+<section class="py-24 bg-[#071A12]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16 animate-on-scroll slide-up">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#059669]/25 bg-[#059669]/8 mb-6">
+                <i class="fas fa-crown text-[#34D399] text-xs"></i>
+                <span class="text-[#34D399] text-xs font-bold uppercase tracking-[0.2em]">Premium Services</span>
+            </div>
+            <h2 class="text-white" style="font-family:'Sora',sans-serif;">Healthcare, Reimagined<br>For You</h2>
+            <p class="text-neutral-400 text-lg mt-4 max-w-2xl mx-auto">From routine medicines to specialized health devices — every service crafted for your wellbeing.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Service 1 -->
+            <div class="rounded-2xl p-7 animate-on-scroll slide-up" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);transition-delay:0.1s;">
+                <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style="background:rgba(5,150,105,0.12);border:1px solid rgba(5,150,105,0.2);">
+                    <i class="fas fa-pills text-[#34D399] text-xl"></i>
+                </div>
+                <h3 class="text-white font-bold mb-3 text-xl" style="font-family:'Sora',sans-serif;">Prescription Medicines</h3>
+                <p class="text-neutral-400 text-sm mb-4">Upload your prescription and receive your medicines verified by our licensed pharmacists.</p>
+                <a href="contact.html#prescription" class="text-[#34D399] text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
+                    Upload Now <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="rounded-2xl p-7 animate-on-scroll slide-up" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);transition-delay:0.2s;">
+                <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style="background:rgba(5,150,105,0.12);border:1px solid rgba(5,150,105,0.2);">
+                    <i class="fas fa-heart-pulse text-[#34D399] text-xl"></i>
+                </div>
+                <h3 class="text-white font-bold mb-3 text-xl" style="font-family:'Sora',sans-serif;">Health Monitoring Devices</h3>
+                <p class="text-neutral-400 text-sm mb-4">Premium blood pressure monitors, glucometers, pulse oximeters and digital thermometers.</p>
+                <a href="products.html" class="text-[#34D399] text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
+                    Shop Devices <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="rounded-2xl p-7 animate-on-scroll slide-up" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);transition-delay:0.3s;">
+                <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style="background:rgba(5,150,105,0.12);border:1px solid rgba(5,150,105,0.2);">
+                    <i class="fas fa-baby text-[#34D399] text-xl"></i>
+                </div>
+                <h3 class="text-white font-bold mb-3 text-xl" style="font-family:'Sora',sans-serif;">Baby Care Essentials</h3>
+                <p class="text-neutral-400 text-sm mb-4">Trusted baby formula, diapers, skin care, and pediatric medicines for newborns to toddlers.</p>
+                <a href="products.html" class="text-[#34D399] text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
+                    Browse Baby Care <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="rounded-2xl p-7 animate-on-scroll slide-up" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);transition-delay:0.1s;">
+                <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style="background:rgba(5,150,105,0.12);border:1px solid rgba(5,150,105,0.2);">
+                    <i class="fas fa-truck-fast text-[#34D399] text-xl"></i>
+                </div>
+                <h3 class="text-white font-bold mb-3 text-xl" style="font-family:'Sora',sans-serif;">Priority Home Delivery</h3>
+                <p class="text-neutral-400 text-sm mb-4">Express 2-hour delivery for premium members. Track your order in real-time via WhatsApp.</p>
+                <a href="contact.html" class="text-[#34D399] text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
+                    Order Now <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="rounded-2xl p-7 animate-on-scroll slide-up" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);transition-delay:0.2s;">
+                <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style="background:rgba(5,150,105,0.12);border:1px solid rgba(5,150,105,0.2);">
+                    <i class="fas fa-user-doctor text-[#34D399] text-xl"></i>
+                </div>
+                <h3 class="text-white font-bold mb-3 text-xl" style="font-family:'Sora',sans-serif;">Pharmacist Consultation</h3>
+                <p class="text-neutral-400 text-sm mb-4">Get free advice from our licensed pharmacists on medicines, dosage and drug interactions.</p>
+                <a href="contact.html" class="text-[#34D399] text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
+                    Consult Now <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="rounded-2xl p-7 animate-on-scroll slide-up" style="background:rgba(5,150,105,0.05);border:1px solid rgba(5,150,105,0.15);transition-delay:0.3s;">
+                <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style="background:rgba(5,150,105,0.12);border:1px solid rgba(5,150,105,0.2);">
+                    <i class="fas fa-leaf text-[#34D399] text-xl"></i>
+                </div>
+                <h3 class="text-white font-bold mb-3 text-xl" style="font-family:'Sora',sans-serif;">Wellness & Nutrition</h3>
+                <p class="text-neutral-400 text-sm mb-4">Vitamins, supplements, ayurvedic products and wellness essentials for a healthier lifestyle.</p>
+                <a href="products.html" class="text-[#34D399] text-sm font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
+                    Shop Wellness <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PRESCRIPTION IMAGE + FEATURE ===== -->
+<section class="py-24 bg-[#040D09]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Content -->
+            <div class="animate-on-scroll slide-right">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#059669]/25 bg-[#059669]/8 mb-6">
+                    <i class="fas fa-file-prescription text-[#34D399] text-xs"></i>
+                    <span class="text-[#34D399] text-xs font-bold uppercase tracking-[0.2em]">Smart Prescription</span>
+                </div>
+                <h2 class="text-white mb-6" style="font-family:'Sora',sans-serif;">Prescription Made<br><span class="green-text">Effortlessly Simple</span></h2>
+                <p class="text-neutral-400 mb-8">Our smart prescription system lets you upload from any device, instantly connects to our pharmacist team, and gets your medicines ready within minutes.</p>
+
+                <!-- Feature list -->
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-center gap-4 p-4 rounded-xl" style="background:rgba(5,150,105,0.06);border:1px solid rgba(5,150,105,0.12);">
+                        <i class="fas fa-upload text-[#34D399] text-lg"></i>
+                        <div>
+                            <div class="text-white font-semibold text-sm">Instant Upload</div>
+                            <div class="text-neutral-400 text-xs">Photo, scan or PDF — we accept all formats</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 rounded-xl" style="background:rgba(5,150,105,0.06);border:1px solid rgba(5,150,105,0.12);">
+                        <i class="fas fa-shield-check text-[#34D399] text-lg"></i>
+                        <div>
+                            <div class="text-white font-semibold text-sm">Pharmacist Verified</div>
+                            <div class="text-neutral-400 text-xs">Licensed pharmacist reviews every prescription</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 rounded-xl" style="background:rgba(5,150,105,0.06);border:1px solid rgba(5,150,105,0.12);">
+                        <i class="fas fa-bell text-[#34D399] text-lg"></i>
+                        <div>
+                            <div class="text-white font-semibold text-sm">Refill Reminders</div>
+                            <div class="text-neutral-400 text-xs">Never miss a dose — we remind you when it's time</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="contact.html#prescription" class="btn btn-primary btn-lg glow-pulse" id="h2-rx-upload">
+                    <i class="fas fa-file-medical text-sm"></i> Upload Prescription Now
+                </a>
+            </div>
+
+            <!-- Image -->
+            <div class="relative animate-on-scroll slide-left">
+                <div class="rounded-3xl overflow-hidden" style="border:1px solid rgba(5,150,105,0.25);">
+                    <img src="assets/images/prescription.png" alt="Prescription Service" class="w-full h-[480px] object-cover">
+                    <div class="absolute inset-0" style="background:linear-gradient(145deg, rgba(7,26,18,0.2) 0%, transparent 60%);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PREMIUM METRICS ===== -->
+<section class="py-20" style="background:linear-gradient(135deg,#059669 0%,#047857 50%,#065F46 100%);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center animate-on-scroll slide-up" style="transition-delay:0.1s;">
+                <div class="text-4xl font-bold text-white mb-2" style="font-family:'Sora',sans-serif;" data-counter data-target="15000" data-suffix="+">0+</div>
+                <div class="text-white/70 text-sm uppercase tracking-widest">Products</div>
+            </div>
+            <div class="text-center animate-on-scroll slide-up" style="transition-delay:0.2s;">
+                <div class="text-4xl font-bold text-white mb-2" style="font-family:'Sora',sans-serif;" data-counter data-target="25000" data-suffix="+">0+</div>
+                <div class="text-white/70 text-sm uppercase tracking-widest">Happy Customers</div>
+            </div>
+            <div class="text-center animate-on-scroll slide-up" style="transition-delay:0.3s;">
+                <div class="text-4xl font-bold text-white mb-2" style="font-family:'Sora',sans-serif;" data-counter data-target="20" data-suffix="+">0+</div>
+                <div class="text-white/70 text-sm uppercase tracking-widest">Years Experience</div>
+            </div>
+            <div class="text-center animate-on-scroll slide-up" style="transition-delay:0.4s;">
+                <div class="text-4xl font-bold text-white mb-2" style="font-family:'Sora',sans-serif;" data-counter data-target="50" data-suffix="+">0+</div>
+                <div class="text-white/70 text-sm uppercase tracking-widest">Brands Stocked</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PREMIUM MEMBERSHIP ===== -->
+<section class="py-24 bg-[#071A12]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-16 animate-on-scroll slide-up">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#059669]/25 bg-[#059669]/8 mb-6">
+                <i class="fas fa-crown text-[#34D399] text-xs"></i>
+                <span class="text-[#34D399] text-xs font-bold uppercase tracking-[0.2em]">Membership Plans</span>
+            </div>
+            <h2 class="text-white" style="font-family:'Sora',sans-serif;">Choose Your<br>Healthcare Plan</h2>
+            <p class="text-neutral-400 mt-4 max-w-xl mx-auto">Unlock exclusive benefits, priority delivery and personalized care with our membership plans.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Basic -->
+            <div class="pricing-card animate-on-scroll slide-up" style="background:#0D2318;border-color:#1A3D2A;transition-delay:0.1s;">
+                <div class="mb-6">
+                    <h3 class="text-white font-bold text-xl mb-1" style="font-family:'Sora',sans-serif;">Basic</h3>
+                    <p class="text-neutral-400 text-sm">For occasional buyers</p>
+                </div>
+                <div class="mb-6">
+                    <span class="text-4xl font-bold text-[#34D399]" style="font-family:'Sora',sans-serif;">Free</span>
+                </div>
+                <ul class="space-y-3 mb-8 flex-1">
+                    <li class="flex items-center gap-3 text-neutral-300 text-sm"><i class="fas fa-check text-[#34D399]"></i> Access to all products</li>
+                    <li class="flex items-center gap-3 text-neutral-300 text-sm"><i class="fas fa-check text-[#34D399]"></i> Standard delivery (24-48h)</li>
+                    <li class="flex items-center gap-3 text-neutral-300 text-sm"><i class="fas fa-check text-[#34D399]"></i> Prescription upload</li>
+                    <li class="flex items-center gap-3 text-neutral-400 text-sm"><i class="fas fa-times text-neutral-600"></i> Priority support</li>
+                    <li class="flex items-center gap-3 text-neutral-400 text-sm"><i class="fas fa-times text-neutral-600"></i> Member discounts</li>
+                </ul>
+                <a href="signup.html" class="btn btn-secondary btn-full" id="plan-basic">Get Started</a>
+            </div>
+
+            <!-- Premium (Featured) -->
+            <div class="pricing-card featured animate-on-scroll slide-up" style="background:linear-gradient(145deg,#059669,#047857);border:2px solid rgba(52,211,153,0.4);transition-delay:0.2s;">
+                <div class="absolute top-4 right-4">
+                    <span class="px-3 py-1 rounded-full text-xs font-bold text-[#047857] bg-[#34D399] uppercase tracking-wide">Most Popular</span>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-white font-bold text-xl mb-1" style="font-family:'Sora',sans-serif;">Premium</h3>
+                    <p class="text-white/70 text-sm">For health-conscious families</p>
+                </div>
+                <div class="mb-6">
+                    <span class="text-4xl font-bold text-white" style="font-family:'Sora',sans-serif;"><sup class="text-lg">₹</sup>499</span>
+                    <span class="text-white/60 text-sm">/month</span>
+                </div>
+                <ul class="space-y-3 mb-8 flex-1">
+                    <li class="flex items-center gap-3 text-white text-sm"><i class="fas fa-check text-white"></i> Everything in Basic</li>
+                    <li class="flex items-center gap-3 text-white text-sm"><i class="fas fa-check text-white"></i> 2-hour priority delivery</li>
+                    <li class="flex items-center gap-3 text-white text-sm"><i class="fas fa-check text-white"></i> 15% discount on all orders</li>
+                    <li class="flex items-center gap-3 text-white text-sm"><i class="fas fa-check text-white"></i> Free pharmacist consultation</li>
+                    <li class="flex items-center gap-3 text-white text-sm"><i class="fas fa-check text-white"></i> Medicine refill reminders</li>
+                </ul>
+                <a href="signup.html" class="btn btn-full" style="background:white;color:#059669;border-radius:50px;font-weight:700;" id="plan-premium">Join Premium</a>
+            </div>
+
+            <!-- Family -->
+            <div class="pricing-card animate-on-scroll slide-up" style="background:#0D2318;border-color:#1A3D2A;transition-delay:0.3s;">
+                <div class="mb-6">
+                    <h3 class="text-white font-bold text-xl mb-1" style="font-family:'Sora',sans-serif;">Family</h3>
+                    <p class="text-neutral-400 text-sm">For large families & seniors</p>
+                </div>
+                <div class="mb-6">
+                    <span class="text-4xl font-bold text-[#34D399]" style="font-family:'Sora',sans-serif;"><sup class="text-lg">₹</sup>899</span>
+                    <span class="text-neutral-400 text-sm">/month</span>
+                </div>
+                <ul class="space-y-3 mb-8 flex-1">
+                    <li class="flex items-center gap-3 text-neutral-300 text-sm"><i class="fas fa-check text-[#34D399]"></i> Everything in Premium</li>
+                    <li class="flex items-center gap-3 text-neutral-300 text-sm"><i class="fas fa-check text-[#34D399]"></i> Up to 5 family members</li>
+                    <li class="flex items-center gap-3 text-neutral-300 text-sm"><i class="fas fa-check text-[#34D399]"></i> 30% discount on all orders</li>
+                    <li class="flex items-center gap-3 text-neutral-300 text-sm"><i class="fas fa-check text-[#34D399]"></i> Dedicated pharmacist</li>
+                    <li class="flex items-center gap-3 text-neutral-300 text-sm"><i class="fas fa-check text-[#34D399]"></i> Free annual health checkup</li>
+                </ul>
+                <a href="signup.html" class="btn btn-secondary btn-full" id="plan-family">Get Family Plan</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<div id="footer-container"></div>
+
+<script src="components.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
