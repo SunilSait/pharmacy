@@ -355,6 +355,17 @@ input, textarea, select, button {
 .badge-error { background: rgba(239, 68, 68, 0.12); color: #DC2626; border: 1px solid rgba(239, 68, 68, 0.25); }
 .badge-info { background: rgba(59, 130, 246, 0.12); color: #2563EB; border: 1px solid rgba(59, 130, 246, 0.25); }
 
+.badge-overlay {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dark .badge-overlay {
+    background: rgba(13, 35, 24, 0.95) !important;
+}
+
 .dark .badge-green { color: var(--primary-light); }
 .dark .badge-success { color: #34D399; }
 .dark .badge-warning { color: #FBBF24; }

@@ -123,14 +123,12 @@
                         ${navLinksMobile}
                     </div>
                     <div class="flex flex-col sm:flex-row items-center gap-3 px-5 pt-4 border-t border-neutral-100 dark:border-[#1A3D2A]">
-                        <div class="flex gap-2 w-full sm:w-auto">
-                            <button class="js-dir-toggle flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-[#122B1E] border border-[#D1FAE5] dark:border-[#1A3D2A] text-neutral-600 dark:text-neutral-400 flex-1 sm:flex-none justify-center text-sm">
+                        <div class="flex gap-2 w-full sm:w-auto justify-center">
+                            <button class="js-dir-toggle flex w-11 h-11 items-center justify-center rounded-xl bg-white dark:bg-[#122B1E] border border-[#D1FAE5] dark:border-[#1A3D2A] text-neutral-500 dark:text-neutral-400 hover:text-[#059669] hover:border-[#059669] transition-all shadow-sm">
                                 <i class="fas fa-exchange-alt text-sm"></i>
-                                <span class="text-xs font-bold uppercase tracking-wider">LTR / RTL</span>
                             </button>
-                            <button class="js-theme-toggle flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-[#122B1E] border border-[#D1FAE5] dark:border-[#1A3D2A] text-neutral-600 dark:text-neutral-400 flex-1 sm:flex-none justify-center text-sm">
+                            <button class="js-theme-toggle flex w-11 h-11 items-center justify-center rounded-xl bg-white dark:bg-[#122B1E] border border-[#D1FAE5] dark:border-[#1A3D2A] text-neutral-500 dark:text-neutral-400 hover:text-[#059669] hover:border-[#059669] transition-all shadow-sm">
                                 <i class="fas fa-moon text-sm"></i>
-                                <span class="text-xs font-bold uppercase tracking-wider">Theme</span>
                             </button>
                         </div>
                         <div class="flex gap-2 w-full sm:w-auto">

@@ -26,13 +26,13 @@
 <div id="navbar-container"></div>
 
 <!-- ===== PAGE BANNER ===== -->
-<section class="relative h-[340px] md:h-[420px] overflow-hidden">
+<section class="relative overflow-hidden">
     <img
-        src="https://images.unsplash.com/photo-1550572017-edd951b55104?auto=format&fit=crop&w=1600&h=600&q=80"
-        alt="MediCare Pharmacy Products"
+        src="https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&w=1600&h=600&q=80"
+        alt="MediCare Products"
         class="absolute inset-0 w-full h-full object-cover"
     >
-    <div class="absolute inset-0" style="background:linear-gradient(135deg,rgba(4,7,5,0.72) 0%,rgba(5,150,105,0.50) 100%);"></div>
+    <div class="absolute inset-0" style="background:linear-gradient(135deg,rgba(4,7,5,0.70) 0%,rgba(5,150,105,0.52) 100%);"></div>
     <div class="absolute top-6 left-0 right-0 z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <nav class="flex items-center gap-2 text-white/60 text-xs uppercase tracking-widest font-semibold">
@@ -42,13 +42,21 @@
             </nav>
         </div>
     </div>
-    <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
+    <div class="relative z-10 flex flex-col items-center justify-center text-center px-4 pt-32 pb-20 md:py-36">
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/25 bg-white/10 mb-4">
             <i class="fas fa-box-open text-white text-xs"></i>
             <span class="text-white text-xs font-bold uppercase tracking-[0.2em]">Products</span>
         </div>
         <h1 class="text-white mb-3" style="font-family:'Sora',sans-serif;text-shadow:0 2px 16px rgba(0,0,0,0.4);">15,000+ Products<br><span style="color:#34D399;">Genuine &amp; Certified</span></h1>
-        <p class="text-white/80 text-base max-w-2xl mx-auto">Medicines, health devices, baby care and wellness products — all from authorized brands.</p>
+        <p class="text-white/80 text-base max-w-2xl mx-auto mb-8">Medicines, health devices, baby care and wellness products — all from authorized brands.</p>
+        
+        <!-- Search Bar in Banner -->
+        <div class="w-full max-w-lg mx-auto relative group">
+            <input type="text" class="w-full pl-5 pr-12 py-3 rounded-2xl border-2 border-white/20 bg-white/10 text-white placeholder-white/60 focus:bg-white/20 focus:border-white focus:outline-none transition-all shadow-xl backdrop-blur-md" placeholder="Search for medicines...">
+            <button class="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-xl bg-white text-[#059669] hover:bg-[#34D399] hover:text-white transition-colors flex items-center justify-center shadow-md">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
     </div>
 </section>
 

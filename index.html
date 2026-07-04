@@ -82,7 +82,7 @@
             </div>
 
             <!-- Right: Hero Image -->
-            <div class="relative animate-on-scroll slide-left hidden lg:block">
+            <div class="relative animate-on-scroll slide-left">
                 <div class="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#059669]/20" style="animation: float 6s ease-in-out infinite;">
                     <img src="assets/images/hero.png" alt="MediCare Pharmacy Store Interior" class="w-full h-[520px] object-cover">
                     <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(5,150,105,0.3) 0%, transparent 50%);"></div>
@@ -137,7 +137,7 @@
                     <img src="assets/images/medicines.png" alt="Medicines & Tablets" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
                     <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(5,150,105,0.6) 0%, transparent 60%);"></div>
                     <div class="absolute top-4 left-4">
-                        <span class="badge badge-green">Prescription & OTC</span>
+                        <span class="badge badge-green badge-overlay">Prescription & OTC</span>
                     </div>
                 </div>
                 <div class="p-6 flex flex-col flex-1">
@@ -158,7 +158,7 @@
                     <img src="assets/images/health-devices.png" alt="Health Monitoring Devices" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
                     <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(5,150,105,0.6) 0%, transparent 60%);"></div>
                     <div class="absolute top-4 left-4">
-                        <span class="badge badge-info">Digital & Analog</span>
+                        <span class="badge badge-info badge-overlay">Digital & Analog</span>
                     </div>
                 </div>
                 <div class="p-6 flex flex-col flex-1">
@@ -179,7 +179,7 @@
                     <img src="assets/images/baby-care.png" alt="Baby Care Products" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
                     <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(5,150,105,0.6) 0%, transparent 60%);"></div>
                     <div class="absolute top-4 left-4">
-                        <span class="badge badge-warning">Safe & Certified</span>
+                        <span class="badge badge-warning badge-overlay">Safe & Certified</span>
                     </div>
                 </div>
                 <div class="p-6 flex flex-col flex-1">
@@ -408,10 +408,10 @@
             <p class="section-subtitle mx-auto text-center">We're conveniently located and open 7 days a week to serve all your healthcare needs.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex flex-col md:flex-row gap-8 items-stretch">
             <!-- Address -->
-            <div class="glass-card p-8 text-center animate-on-scroll slide-up" style="transition-delay:0.1s;">
-                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-5">
+            <div class="flex-1 glass-card p-8 text-center animate-on-scroll slide-up flex flex-col items-center justify-center" style="transition-delay:0.1s;">
+                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-5 flex-shrink-0">
                     <i class="fas fa-map-marker-alt text-[#059669] text-xl"></i>
                 </div>
                 <h4 class="font-bold text-[#0F172A] dark:text-white mb-3">Store Location</h4>
@@ -422,36 +422,36 @@
             </div>
 
             <!-- Store Timings -->
-            <div class="glass-card p-8 text-center animate-on-scroll slide-up" style="transition-delay:0.2s;">
-                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-5">
+            <div class="flex-1 glass-card p-8 text-center animate-on-scroll slide-up flex flex-col items-center justify-center" style="transition-delay:0.2s;">
+                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-5 flex-shrink-0">
                     <i class="fas fa-clock text-[#059669] text-xl"></i>
                 </div>
                 <h4 class="font-bold text-[#0F172A] dark:text-white mb-3">Store Timings</h4>
-                <div class="space-y-2 text-sm text-neutral-500 dark:text-neutral-400">
+                <div class="space-y-2 text-sm text-neutral-500 dark:text-neutral-400 w-full">
                     <div class="flex justify-between px-4">
                         <span>Monday – Friday</span>
                         <span class="text-[#059669] font-semibold">8AM – 9PM</span>
                     </div>
                     <div class="flex justify-between px-4">
-                        <span>Saturday</span>
+                        <span>Sat</span>
                         <span class="text-[#059669] font-semibold">8AM – 9PM</span>
                     </div>
                     <div class="flex justify-between px-4">
-                        <span>Sunday</span>
+                        <span>Sun</span>
                         <span class="text-[#059669] font-semibold">9AM – 6PM</span>
                     </div>
                 </div>
             </div>
 
             <!-- Contact -->
-            <div class="glass-card p-8 text-center animate-on-scroll slide-up" style="transition-delay:0.3s;">
-                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-5">
+            <div class="flex-1 glass-card p-8 text-center animate-on-scroll slide-up flex flex-col items-center justify-center" style="transition-delay:0.3s;">
+                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-5 flex-shrink-0">
                     <i class="fas fa-phone-volume text-[#059669] text-xl"></i>
                 </div>
                 <h4 class="font-bold text-[#0F172A] dark:text-white mb-3">Contact Us</h4>
-                <div class="space-y-2 text-sm text-neutral-500 dark:text-neutral-400">
+                <div class="space-y-2 text-sm text-neutral-500 dark:text-neutral-400 w-full">
                     <p><i class="fas fa-phone mr-2 text-[#059669]"></i>+91 98400 12345</p>
-                    <p><i class="fas fa-envelope mr-2 text-[#059669]"></i>care@medicare-pharmacy.com</p>
+                    <p><i class="fas fa-envelope mr-2 text-[#059669]"></i>care@medi.com</p>
                     <p><i class="fab fa-whatsapp mr-2 text-[#059669]"></i>WhatsApp: +91 98400 12345</p>
                 </div>
             </div>
