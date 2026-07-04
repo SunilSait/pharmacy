@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<div class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden px-4 py-16" style="background:linear-gradient(145deg,#020D07 0%,#071A12 100%);">
+<div class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden px-4 py-16 bg-cream-gradient-simple">
     <!-- Top-right controls -->
     <div class="auth-top-icons">
         <button class="icon-btn dark-toggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
@@ -45,7 +45,7 @@
                     <rect x="42" y="22" width="16" height="56" rx="4" fill="#059669"/>
                     <rect x="22" y="42" width="56" height="16" rx="4" fill="#059669"/>
                 </svg>
-                <span class="font-bold text-xl text-white group-hover:text-[#34D399] transition-colors" style="font-family:'Sora',sans-serif;">MediCare</span>
+                <span class="font-bold text-xl text-[#0F172A] dark:text-white group-hover:text-[#059669] dark:group-hover:text-[#34D399] transition-colors" style="font-family:'Sora',sans-serif;">MediCare</span>
             </a>
         </div>
 
@@ -61,16 +61,16 @@
             </div>
         </div>
 
-        <h1 class="text-white mb-4" style="font-family:'Sora',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);">
+        <h1 class="text-[#0F172A] dark:text-white mb-4" style="font-family:'Sora',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);">
             Medicine Not <span class="green-text">Found</span>
         </h1>
-        <p class="text-neutral-400 text-lg mb-10 max-w-lg mx-auto">The page you're looking for seems to have gone missing from our shelves. Let's get you back to the right aisle!</p>
+        <p class="text-neutral-600 dark:text-neutral-400 text-lg mb-10 max-w-lg mx-auto">The page you're looking for seems to have gone missing from our shelves. Let's get you back to the right aisle!</p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <a href="index.html" class="btn btn-primary btn-lg" id="err404-home">
                 <i class="fas fa-house text-xs"></i> Back to Home
             </a>
-            <a href="contact.html" class="btn btn-lg" style="border:1.5px solid rgba(5,150,105,0.35);color:#34D399;border-radius:50px;" id="err404-contact">
+            <a href="contact.html" class="btn btn-secondary btn-lg" id="err404-contact">
                 <i class="fas fa-phone text-xs"></i> Contact Us
             </a>
         </div>
