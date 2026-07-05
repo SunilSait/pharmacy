@@ -163,10 +163,10 @@
                         <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
                             ${BRAND_TAGLINE}. Quality medicines, health devices & baby care delivered to your doorstep.
                         </p>
-                        <div class="text-xs text-neutral-500 dark:text-neutral-400 space-y-1">
-                            <p><i class="fas fa-clock text-[#059669] mr-2"></i>${STORE_TIMINGS}</p>
-                            <p><i class="fas fa-phone text-[#059669] mr-2"></i>${PHONE}</p>
-                            <p><i class="fas fa-envelope text-[#059669] mr-2"></i>${EMAIL}</p>
+                        <div class="text-sm text-neutral-500 dark:text-neutral-400 space-y-3 mt-4">
+                            <p class="flex items-start gap-2"><i class="fas fa-clock text-[#059669] mt-1 w-4 text-center shrink-0"></i> <span>${STORE_TIMINGS}</span></p>
+                            <p class="flex items-center gap-2"><i class="fas fa-phone text-[#059669] w-4 text-center shrink-0"></i> <span>${PHONE}</span></p>
+                            <p class="flex items-center gap-2"><i class="fas fa-envelope text-[#059669] w-4 text-center shrink-0"></i> <span>${EMAIL}</span></p>
                         </div>
                         <div class="flex gap-3">${socialLinksHtml}</div>
                     </div>
@@ -199,7 +199,7 @@
                     <!-- Newsletter -->
                     <div class="bg-white dark:bg-[#0D2318] p-6 rounded-2xl border border-[#D1FAE5] dark:border-[#1A3D2A]">
                         <h4 class="font-bold mb-2 text-[#0F172A] dark:text-white" style="font-family:'Sora',sans-serif;font-size:1.1rem;">Health Tips</h4>
-                        <p class="text-xs text-neutral-500 dark:text-neutral-400 mb-4">Get weekly health tips, offers & medicine reminders in your inbox.</p>
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-4 leading-relaxed">Get weekly health tips, offers & medicine reminders in your inbox.</p>
                         <form id="newsletter-form" class="space-y-2.5">
                             <input type="email" required placeholder="your@email.com"
                                 class="w-full px-4 py-3 text-sm bg-[#F0FDF4] dark:bg-[#122B1E] border border-[#D1FAE5] dark:border-[#1A3D2A] focus:border-[#059669] focus:ring-2 focus:ring-[#059669]/20 rounded-xl outline-none transition-all dark:text-white placeholder:text-neutral-400" />
