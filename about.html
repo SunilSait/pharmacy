@@ -56,7 +56,7 @@
                     <img src="assets/images/about.png" alt="MediCare Pharmacy Team" class="w-full h-[500px] object-cover">
                 </div>
                 <!-- Founded badge -->
-                <div class="absolute -bottom-6 -right-4 bg-white dark:bg-[#0D2318] rounded-2xl p-5 shadow-xl border border-[#D1FAE5] dark:border-[#1A3D2A] text-center">
+                <div class="absolute -bottom-6 right-2 sm:right-4 md:-right-4 bg-white dark:bg-[#0D2318] rounded-2xl p-5 shadow-xl border border-[#D1FAE5] dark:border-[#1A3D2A] text-center">
                     <div class="text-3xl font-bold text-[#059669]" style="font-family:'Sora',sans-serif;">2005</div>
                     <div class="text-xs text-neutral-500 uppercase tracking-wider mt-1">Est. Year</div>
                 </div>
@@ -225,31 +225,32 @@
 
         <div class="relative">
             <!-- Vertical center line -->
-            <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2" style="background:linear-gradient(to bottom, transparent, #D1FAE5, #059669, #D1FAE5, transparent);"></div>
+            <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-[2px] -translate-x-1/2" style="background:linear-gradient(to bottom, transparent, #059669, transparent);"></div>
 
             <div class="space-y-12">
                 <!-- 2005 -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-on-scroll slide-up">
-                    <div class="text-left md:text-right px-0 md:pr-8">
+                <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-on-scroll slide-up">
+                    <div class="text-left md:text-right px-0 md:pr-12">
                         <div class="inline-block px-4 py-1 rounded-full bg-[#059669]/10 border border-[#059669]/20 text-[#059669] font-bold text-sm mb-3">2005</div>
                         <h4 class="font-bold text-[#0F172A] dark:text-white text-lg mb-2">Founded in Chennai</h4>
                         <p class="text-neutral-500 dark:text-neutral-400 text-sm">Dr. Rajan M. opens MediCare's first single-counter pharmacy near City Hospital with a mission to make genuine medicines accessible to all.</p>
                     </div>
-                    <div class="hidden md:flex items-center pl-8">
-                        <div class="w-12 h-12 rounded-2xl bg-[#059669]/10 flex items-center justify-center border border-[#059669]/20">
-                            <i class="fas fa-store text-[#059669] text-xl"></i>
+                    <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center">
+                        <div class="w-12 h-12 rounded-2xl bg-white dark:bg-[#0D2318] flex items-center justify-center border border-[#059669]/25 shadow-md">
+                            <i class="fas fa-store text-[#059669] text-lg"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- 2010 -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-on-scroll slide-up">
-                    <div class="hidden md:flex items-center justify-end pr-8">
-                        <div class="w-12 h-12 rounded-2xl bg-[#059669]/10 flex items-center justify-center border border-[#059669]/20">
-                            <i class="fas fa-expand text-[#059669] text-xl"></i>
+                <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-on-scroll slide-up">
+                    <div class="hidden md:block"></div> <!-- Spacer to push text to the right column -->
+                    <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center">
+                        <div class="w-12 h-12 rounded-2xl bg-white dark:bg-[#0D2318] flex items-center justify-center border border-[#059669]/25 shadow-md">
+                            <i class="fas fa-expand text-[#059669] text-lg"></i>
                         </div>
                     </div>
-                    <div class="text-left px-0 md:pl-8">
+                    <div class="text-left px-0 md:pl-12">
                         <div class="inline-block px-4 py-1 rounded-full bg-[#059669]/10 border border-[#059669]/20 text-[#059669] font-bold text-sm mb-3">2010</div>
                         <h4 class="font-bold text-[#0F172A] dark:text-white text-lg mb-2">Store Expansion</h4>
                         <p class="text-neutral-500 dark:text-neutral-400 text-sm">Expanded to a full medical store, adding health devices, baby care products and our first dedicated consultation desk with licensed pharmacists.</p>
@@ -257,27 +258,28 @@
                 </div>
 
                 <!-- 2015 -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-on-scroll slide-up">
-                    <div class="text-left md:text-right px-0 md:pr-8">
+                <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-on-scroll slide-up">
+                    <div class="text-left md:text-right px-0 md:pr-12">
                         <div class="inline-block px-4 py-1 rounded-full bg-[#059669]/10 border border-[#059669]/20 text-[#059669] font-bold text-sm mb-3">2015</div>
                         <h4 class="font-bold text-[#0F172A] dark:text-white text-lg mb-2">ISO Certification & Home Delivery</h4>
                         <p class="text-neutral-500 dark:text-neutral-400 text-sm">Achieved ISO 9001 certification for quality management and launched our city-wide home delivery service reaching 10,000+ households.</p>
                     </div>
-                    <div class="hidden md:flex items-center pl-8">
-                        <div class="w-12 h-12 rounded-2xl bg-[#059669]/10 flex items-center justify-center border border-[#059669]/20">
-                            <i class="fas fa-award text-[#059669] text-xl"></i>
+                    <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center">
+                        <div class="w-12 h-12 rounded-2xl bg-white dark:bg-[#0D2318] flex items-center justify-center border border-[#059669]/25 shadow-md">
+                            <i class="fas fa-award text-[#059669] text-lg"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- 2020 -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-on-scroll slide-up">
-                    <div class="hidden md:flex items-center justify-end pr-8">
-                        <div class="w-12 h-12 rounded-2xl bg-[#059669]/10 flex items-center justify-center border border-[#059669]/20">
-                            <i class="fas fa-file-medical text-[#059669] text-xl"></i>
+                <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-on-scroll slide-up">
+                    <div class="hidden md:block"></div> <!-- Spacer to push text to the right column -->
+                    <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center">
+                        <div class="w-12 h-12 rounded-2xl bg-white dark:bg-[#0D2318] flex items-center justify-center border border-[#059669]/25 shadow-md">
+                            <i class="fas fa-file-medical text-[#059669] text-lg"></i>
                         </div>
                     </div>
-                    <div class="text-left px-0 md:pl-8">
+                    <div class="text-left px-0 md:pl-12">
                         <div class="inline-block px-4 py-1 rounded-full bg-[#059669]/10 border border-[#059669]/20 text-[#059669] font-bold text-sm mb-3">2020</div>
                         <h4 class="font-bold text-[#0F172A] dark:text-white text-lg mb-2">Digital Prescription Upload Launched</h4>
                         <p class="text-neutral-500 dark:text-neutral-400 text-sm">Introduced our online prescription upload system during the pandemic, serving 5,000+ families safely from home during lockdown periods.</p>
@@ -285,15 +287,15 @@
                 </div>
 
                 <!-- 2025 -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-on-scroll slide-up">
-                    <div class="text-left md:text-right px-0 md:pr-8">
+                <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center animate-on-scroll slide-up">
+                    <div class="text-left md:text-right px-0 md:pr-12">
                         <div class="inline-block px-4 py-1 rounded-full bg-[#059669]/10 border border-[#059669]/20 text-[#059669] font-bold text-sm mb-3">2025</div>
                         <h4 class="font-bold text-[#0F172A] dark:text-white text-lg mb-2">Premium Membership & 25K+ Customers</h4>
                         <p class="text-neutral-500 dark:text-neutral-400 text-sm">Launched premium membership plans with priority delivery, free consultations and refill reminders. Now proudly serving over 25,000 families across the city.</p>
                     </div>
-                    <div class="hidden md:flex items-center pl-8">
-                        <div class="w-12 h-12 rounded-2xl bg-[#059669]/10 flex items-center justify-center border border-[#059669]/20">
-                            <i class="fas fa-crown text-[#059669] text-xl"></i>
+                    <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center">
+                        <div class="w-12 h-12 rounded-2xl bg-white dark:bg-[#0D2318] flex items-center justify-center border border-[#059669]/25 shadow-md">
+                            <i class="fas fa-crown text-[#059669] text-lg"></i>
                         </div>
                     </div>
                 </div>

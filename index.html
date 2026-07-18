@@ -423,49 +423,64 @@
 
         <div class="flex flex-col md:flex-row gap-8 items-stretch">
             <!-- Address -->
-            <div class="flex-1 glass-card p-8 text-center animate-on-scroll slide-up flex flex-col items-center justify-center" style="transition-delay:0.1s;">
-                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-5 flex-shrink-0">
+            <div class="flex-1 glass-card p-8 animate-on-scroll slide-up flex flex-col items-start text-left" style="transition-delay:0.1s;">
+                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mb-5 flex-shrink-0">
                     <i class="fas fa-map-marker-alt text-[#059669] text-xl"></i>
                 </div>
-                <h4 class="font-bold text-[#0F172A] dark:text-white mb-3">Store Location</h4>
-                <p class="text-neutral-500 dark:text-neutral-400 text-sm">14 Health Avenue,<br>Near City Hospital,<br>Chennai, TN 600001</p>
-                <a href="https://maps.google.com" target="_blank" class="mt-4 inline-flex items-center gap-2 text-[#059669] text-sm font-semibold hover:underline">
-                    Get Directions <i class="fas fa-external-link text-xs"></i>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-3 text-lg" style="font-family:'Sora',sans-serif;">Store Location</h4>
+                <p class="text-neutral-500 dark:text-neutral-400 text-sm leading-relaxed">14 Health Avenue,<br>Near City Hospital,<br>Chennai, TN 600001</p>
+                <a href="https://maps.google.com" target="_blank" class="mt-auto pt-6 inline-flex items-center gap-2 text-[#059669] text-sm font-semibold hover:underline">
+                    Get Directions <i class="fas fa-external-link-alt text-xs"></i>
                 </a>
             </div>
 
             <!-- Store Timings -->
-            <div class="flex-1 glass-card p-8 text-center animate-on-scroll slide-up flex flex-col items-center justify-center" style="transition-delay:0.2s;">
-                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-5 flex-shrink-0">
+            <div class="flex-1 glass-card p-8 animate-on-scroll slide-up flex flex-col items-start text-left" style="transition-delay:0.2s;">
+                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mb-5 flex-shrink-0">
                     <i class="fas fa-clock text-[#059669] text-xl"></i>
                 </div>
-                <h4 class="font-bold text-[#0F172A] dark:text-white mb-3">Store Timings</h4>
-                <div class="space-y-2 text-sm text-neutral-500 dark:text-neutral-400 w-full">
-                    <div class="flex justify-between px-4">
-                        <span>Monday – Friday</span>
-                        <span class="text-[#059669] font-semibold">8AM – 9PM</span>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-3 text-lg" style="font-family:'Sora',sans-serif;">Store Timings</h4>
+                <div class="space-y-3 text-sm text-neutral-500 dark:text-neutral-400 w-full mt-auto">
+                    <div class="flex justify-between border-b border-[#059669]/10 pb-2">
+                        <span class="font-medium text-neutral-600 dark:text-neutral-300">Monday – Friday</span>
+                        <span class="text-[#059669] font-bold">8:00 AM – 9:00 PM</span>
                     </div>
-                    <div class="flex justify-between px-4">
-                        <span>Sat</span>
-                        <span class="text-[#059669] font-semibold">8AM – 9PM</span>
+                    <div class="flex justify-between border-b border-[#059669]/10 pb-2">
+                        <span class="font-medium text-neutral-600 dark:text-neutral-300">Saturday</span>
+                        <span class="text-[#059669] font-bold">8:00 AM – 9:00 PM</span>
                     </div>
-                    <div class="flex justify-between px-4">
-                        <span>Sun</span>
-                        <span class="text-[#059669] font-semibold">9AM – 6PM</span>
+                    <div class="flex justify-between pb-1">
+                        <span class="font-medium text-neutral-600 dark:text-neutral-300">Sunday</span>
+                        <span class="text-[#059669] font-bold">9:00 AM – 6:00 PM</span>
                     </div>
                 </div>
             </div>
 
             <!-- Contact -->
-            <div class="flex-1 glass-card p-8 text-center animate-on-scroll slide-up flex flex-col items-center justify-center" style="transition-delay:0.3s;">
-                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mx-auto mb-5 flex-shrink-0">
+            <div class="flex-1 glass-card p-8 animate-on-scroll slide-up flex flex-col items-start text-left" style="transition-delay:0.3s;">
+                <div class="w-14 h-14 rounded-2xl bg-[#059669]/10 flex items-center justify-center mb-5 flex-shrink-0">
                     <i class="fas fa-phone-volume text-[#059669] text-xl"></i>
                 </div>
-                <h4 class="font-bold text-[#0F172A] dark:text-white mb-3">Contact Us</h4>
-                <div class="space-y-2 text-sm text-neutral-500 dark:text-neutral-400 w-full">
-                    <p><i class="fas fa-phone mr-2 text-[#059669]"></i>+91 98400 12345</p>
-                    <p><i class="fas fa-envelope mr-2 text-[#059669]"></i>care@medi.com</p>
-                    <p><i class="fab fa-whatsapp mr-2 text-[#059669]"></i>WhatsApp: +91 98400 12345</p>
+                <h4 class="font-bold text-[#0F172A] dark:text-white mb-3 text-lg" style="font-family:'Sora',sans-serif;">Contact Us</h4>
+                <div class="space-y-4 text-sm text-neutral-500 dark:text-neutral-400 w-full mt-auto">
+                    <a href="tel:+919840012345" class="flex items-center gap-3 hover:text-[#059669] transition-colors group">
+                        <div class="w-8 h-8 rounded-lg bg-[#059669]/8 flex items-center justify-center text-[#059669] flex-shrink-0 group-hover:bg-[#059669] group-hover:text-white transition-colors">
+                            <i class="fas fa-phone text-xs"></i>
+                        </div>
+                        <span class="font-medium text-neutral-700 dark:text-neutral-300">+91 98400 12345</span>
+                    </a>
+                    <a href="mailto:care@medicare-pharmacy.com" class="flex items-center gap-3 hover:text-[#059669] transition-colors group">
+                        <div class="w-8 h-8 rounded-lg bg-[#059669]/8 flex items-center justify-center text-[#059669] flex-shrink-0 group-hover:bg-[#059669] group-hover:text-white transition-colors">
+                            <i class="fas fa-envelope text-xs"></i>
+                        </div>
+                        <span class="font-medium text-neutral-700 dark:text-neutral-300 text-wrap break-all">care@medi.com</span>
+                    </a>
+                    <a href="https://wa.me/919840012345" target="_blank" class="flex items-center gap-3 hover:text-[#059669] transition-colors group">
+                        <div class="w-8 h-8 rounded-lg bg-[#059669]/8 flex items-center justify-center text-[#059669] flex-shrink-0 group-hover:bg-[#059669] group-hover:text-white transition-colors">
+                            <i class="fab fa-whatsapp text-sm"></i>
+                        </div>
+                        <span class="font-medium text-neutral-700 dark:text-neutral-300">WhatsApp: +91 98400 12345</span>
+                    </a>
                 </div>
             </div>
         </div>

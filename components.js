@@ -163,10 +163,15 @@
                         <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
                             ${BRAND_TAGLINE}. Quality medicines, health devices & baby care delivered to your doorstep.
                         </p>
-                        <div class="text-sm text-neutral-500 dark:text-neutral-400 space-y-3 mt-4">
-                            <p class="flex items-start gap-2"><i class="fas fa-clock text-[#059669] mt-1 w-4 text-center shrink-0"></i> <span>${STORE_TIMINGS}</span></p>
-                            <p class="flex items-center gap-2"><i class="fas fa-phone text-[#059669] w-4 text-center shrink-0"></i> <span>${PHONE}</span></p>
-                            <p class="flex items-center gap-2"><i class="fas fa-envelope text-[#059669] w-4 text-center shrink-0"></i> <span>${EMAIL}</span></p>
+                        <div class="text-sm text-neutral-500 dark:text-neutral-400 space-y-3.5 mt-4">
+                            <a href="tel:${PHONE}" class="flex items-start gap-3 hover:text-[#059669] transition-colors group">
+                                <i class="fas fa-phone text-[#059669] mt-1 w-4 text-center shrink-0"></i>
+                                <span class="group-hover:underline">${PHONE}</span>
+                            </a>
+                            <a href="mailto:${EMAIL}" class="flex items-start gap-3 hover:text-[#059669] transition-colors group">
+                                <i class="fas fa-envelope text-[#059669] mt-1 w-4 text-center shrink-0"></i>
+                                <span class="break-all group-hover:underline">${EMAIL}</span>
+                            </a>
                         </div>
                         <div class="flex gap-3">${socialLinksHtml}</div>
                     </div>

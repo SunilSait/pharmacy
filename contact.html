@@ -85,136 +85,176 @@
     </div>
 </section>
 
-<!-- ===== PRESCRIPTION FORM & GENERAL ENQUIRY ===== -->
-<section id="prescription" class="py-24 bg-cream-gradient-simple">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-
-            <!-- Prescription Upload Form -->
-            <div class="animate-on-scroll slide-right">
-                <div class="section-tag">
-                    <i class="fas fa-file-prescription text-xs"></i> Upload Prescription
-                </div>
-                <h2 class="section-title text-2xl mb-2">Send Us Your Prescription</h2>
-                <p class="text-neutral-500 dark:text-neutral-400 mb-6 text-sm">Upload your prescription and we'll prepare your order. Delivery or store pickup available.</p>
-
-                <div class="bg-white dark:bg-[#0D2318] rounded-3xl p-8 border border-[#D1FAE5] dark:border-[#1A3D2A] shadow-lg">
-                    <form id="rx-form" onsubmit="handleRxSubmit(event)" class="space-y-5">
-                        <div class="form-group">
-                            <label class="form-label" for="c-rx-name">Full Name</label>
-                            <input type="text" id="c-rx-name" class="form-input" placeholder="Your full name" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="c-rx-phone">Phone Number</label>
-                            <input type="tel" id="c-rx-phone" class="form-input" placeholder="+91 98400 XXXXX" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="c-rx-address">Delivery Address</label>
-                            <input type="text" id="c-rx-address" class="form-input" placeholder="Full address for delivery">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="c-rx-type">Delivery Type</label>
-                            <select id="c-rx-type" class="form-input">
-                                <option value="home">Home Delivery</option>
-                                <option value="pickup">Store Pickup</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Prescription File (Image / PDF)</label>
-                            <label class="flex items-center gap-3 px-4 py-4 border-2 border-dashed border-[#D1FAE5] dark:border-[#1A3D2A] rounded-xl cursor-pointer hover:border-[#059669] transition-colors bg-[#F0FDF4] dark:bg-[#122B1E]">
-                                <i class="fas fa-cloud-arrow-up text-[#059669] text-2xl"></i>
-                                <div>
-                                    <span id="file-label" class="text-sm text-neutral-500 dark:text-neutral-400 block">Click to upload or drag & drop</span>
-                                    <span class="text-xs text-neutral-400">JPG, PNG, PDF up to 10 MB</span>
-                                </div>
-                                <input type="file" id="prescription-file" accept="image/*,.pdf" class="hidden">
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="c-rx-notes">Notes</label>
-                            <textarea id="c-rx-notes" class="form-input" rows="2" placeholder="Any specific notes or requirements..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full" id="c-rx-submit">
-                            <i class="fas fa-paper-plane text-sm"></i> Submit Prescription
-                        </button>
-                    </form>
-                    <p id="rx-success-msg" class="hidden text-center text-[#059669] font-semibold mt-4">
-                        <i class="fas fa-circle-check mr-2"></i>Received! We'll call you within 30 minutes.
-                    </p>
-                </div>
+<!-- ===== GENERAL ENQUIRY / CONTACT FORM ===== -->
+<section id="contact-form-section" class="py-24 bg-cream-gradient-simple">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <!-- Centered Info Panel at the Top -->
+        <div class="text-center mb-12 animate-on-scroll slide-up">
+            <div class="section-tag inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#059669]/25 bg-[#059669]/8 mb-4">
+                <i class="fas fa-comment-dots text-[#059669] text-xs"></i>
+                <span class="text-[#059669] text-xs font-bold uppercase tracking-[0.2em]">General Enquiry</span>
             </div>
-
-            <!-- General Enquiry Form -->
-            <div class="animate-on-scroll slide-left">
-                <div class="section-tag">
-                    <i class="fas fa-comment-dots text-xs"></i> General Enquiry
-                </div>
-                <h2 class="section-title text-2xl mb-2">Send Us a Message</h2>
-                <p class="text-neutral-500 dark:text-neutral-400 mb-6 text-sm">Have a question about our products, services or delivery? We'd love to hear from you.</p>
-
-                <div class="bg-white dark:bg-[#0D2318] rounded-3xl p-8 border border-[#D1FAE5] dark:border-[#1A3D2A] shadow-lg">
-                    <form id="enquiry-form" onsubmit="handleEnquiry(event)" class="space-y-5">
-                        <div class="form-group">
-                            <label class="form-label" for="eq-name">Full Name</label>
-                            <input type="text" id="eq-name" class="form-input" placeholder="Your full name" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="eq-email">Email Address</label>
-                            <input type="email" id="eq-email" class="form-input" placeholder="you@example.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="eq-phone">Phone Number</label>
-                            <input type="tel" id="eq-phone" class="form-input" placeholder="+91 98400 XXXXX">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="eq-subject">Subject</label>
-                            <select id="eq-subject" class="form-input">
-                                <option value="">Select a topic</option>
-                                <option value="product">Product Availability</option>
-                                <option value="delivery">Home Delivery</option>
-                                <option value="prescription">Prescription Query</option>
-                                <option value="price">Pricing & Offers</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="eq-message">Message</label>
-                            <textarea id="eq-message" class="form-input" rows="4" placeholder="Tell us how we can help..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full" id="eq-submit">
-                            <i class="fas fa-paper-plane text-sm"></i> Send Message
-                        </button>
-                    </form>
-                    <p id="eq-success" class="hidden text-center text-[#059669] font-semibold mt-4">
-                        <i class="fas fa-circle-check mr-2"></i>Message sent! We'll reply within 2 hours.
-                    </p>
-                </div>
-
-                <!-- Quick Help / Contact Info Card -->
-                <div class="mt-6 p-6 rounded-3xl bg-[#F0FDF4] dark:bg-[#122B1E] border border-[#059669]/15 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4 animate-on-scroll slide-up">
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-[#059669]/10 flex items-center justify-center text-[#059669]">
-                            <i class="fas fa-headset text-lg"></i>
-                        </div>
-                        <div class="text-left">
-                            <div class="text-xs text-neutral-400 dark:text-neutral-500 uppercase font-semibold tracking-wider">Quick Support</div>
-                            <div class="text-sm font-bold text-[#0F172A] dark:text-white">+91 98400 12345</div>
-                        </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#0F172A] dark:text-white mb-4" style="font-family:'Sora',sans-serif;">Send Us a Message</h2>
+            <p class="text-neutral-500 dark:text-neutral-400 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-8">
+                Have a question about our products, services, or delivery? We'd love to hear from you. Fill out the contact form, and our support team will get back to you within 2 hours.
+            </p>
+            
+            <!-- Quick Help / Contact Info Card (Centered) -->
+            <div class="p-6 rounded-3xl bg-white dark:bg-[#0D2318] border border-[#059669]/15 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4 max-w-xl mx-auto">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-[#059669]/10 flex items-center justify-center text-[#059669]">
+                        <i class="fas fa-headset text-lg"></i>
                     </div>
-                    <div class="flex items-center gap-2">
-                        <a href="tel:+919840012345" class="w-9 h-9 rounded-lg bg-[#059669] text-white flex items-center justify-center hover:bg-[#047857] transition-all" title="Call Us">
-                            <i class="fas fa-phone text-sm"></i>
-                        </a>
-                        <a href="https://wa.me/919840012345" class="w-9 h-9 rounded-lg bg-[#25D366] text-white flex items-center justify-center hover:bg-[#128C7E] transition-all" title="WhatsApp Us">
-                            <i class="fab fa-whatsapp text-base"></i>
-                        </a>
-                        <a href="mailto:care@medicare-pharmacy.com" class="w-9 h-9 rounded-lg bg-[#3B82F6] text-white flex items-center justify-center hover:bg-[#2563EB] transition-all" title="Email Us">
-                            <i class="fas fa-envelope text-sm"></i>
-                        </a>
+                    <div class="text-left">
+                        <div class="text-xs text-neutral-400 dark:text-neutral-500 uppercase font-semibold tracking-wider">Quick Support</div>
+                        <div class="text-sm font-bold text-[#0F172A] dark:text-white">+91 98400 12345</div>
                     </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <a href="tel:+919840012345" class="w-9 h-9 rounded-lg bg-[#059669] text-white flex items-center justify-center hover:bg-[#047857] transition-all" title="Call Us">
+                        <i class="fas fa-phone text-sm"></i>
+                    </a>
+                    <a href="https://wa.me/919840012345" class="w-9 h-9 rounded-lg bg-[#25D366] text-white flex items-center justify-center hover:bg-[#128C7E] transition-all" title="WhatsApp Us">
+                        <i class="fab fa-whatsapp text-base"></i>
+                    </a>
+                    <a href="mailto:care@medicare-pharmacy.com" class="w-9 h-9 rounded-lg bg-[#3B82F6] text-white flex items-center justify-center hover:bg-[#2563EB] transition-all" title="Email Us">
+                        <i class="fas fa-envelope text-sm"></i>
+                    </a>
                 </div>
             </div>
         </div>
+
+        <!-- Centered Form Panel below it -->
+        <div class="max-w-2xl mx-auto animate-on-scroll slide-up">
+            <div class="bg-white dark:bg-[#0D2318] rounded-3xl p-8 border border-[#D1FAE5] dark:border-[#1A3D2A] shadow-lg">
+                <form id="enquiry-form" onsubmit="handleEnquiry(event)" class="space-y-5">
+                    <div class="form-group">
+                        <label class="form-label" for="eq-name">Full Name</label>
+                        <input type="text" id="eq-name" class="form-input" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="eq-email">Email Address</label>
+                        <input type="email" id="eq-email" class="form-input" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="eq-phone">Phone Number</label>
+                        <input type="tel" id="eq-phone" class="form-input" placeholder="+91 98400 XXXXX">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="eq-subject">Subject</label>
+                        <select id="eq-subject" class="form-input">
+                            <option value="">Select a topic</option>
+                            <option value="product">Product Availability</option>
+                            <option value="delivery">Home Delivery</option>
+                            <option value="prescription">Prescription Query</option>
+                            <option value="price">Pricing & Offers</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="eq-message">Message</label>
+                        <textarea id="eq-message" class="form-input" rows="4" placeholder="Tell us how we can help..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="eq-submit">
+                        <i class="fas fa-paper-plane text-sm"></i> Send Message
+                    </button>
+                </form>
+                <p id="eq-success" class="hidden text-center text-[#059669] font-semibold mt-4">
+                    <i class="fas fa-circle-check mr-2"></i>Message sent! We'll reply within 2 hours.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== UPLOAD PRESCRIPTION SECTION ===== -->
+<section id="prescription" class="py-24 bg-white dark:bg-[#071A12] border-t border-[#059669]/10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <!-- Centered Info Panel at the Top -->
+        <div class="text-center mb-12 animate-on-scroll slide-up">
+            <div class="section-tag inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#059669]/25 bg-[#059669]/8 mb-4">
+                <i class="fas fa-file-prescription text-[#059669] text-xs"></i>
+                <span class="text-[#059669] text-xs font-bold uppercase tracking-[0.2em]">Upload Prescription</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#0F172A] dark:text-white mb-4" style="font-family:'Sora',sans-serif;">Send Us Your Prescription</h2>
+            <p class="text-neutral-500 dark:text-neutral-400 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-8">
+                Upload your doctor's prescription, and our licensed pharmacist team will review it, verify pricing & availability, and prepare your medicines. Choose home delivery or easy store pickup.
+            </p>
+            
+            <!-- Prescription Checklist (Centered) -->
+            <div class="p-6 rounded-3xl bg-[#F0FDF4] dark:bg-[#122B1E] border border-[#059669]/15 space-y-4 max-w-xl mx-auto text-left">
+                <h4 class="font-bold text-neutral-800 dark:text-white flex items-center gap-2" style="font-family:'Sora',sans-serif;">
+                    <i class="fas fa-clipboard-list text-[#059669]"></i> Prescription Checklist
+                </h4>
+                <p class="text-xs text-neutral-500 dark:text-neutral-400 font-medium">For faster approval, ensure the upload contains:</p>
+                <ul class="space-y-2 text-xs text-neutral-600 dark:text-neutral-400">
+                    <li class="flex items-center gap-2">
+                        <i class="fas fa-circle-check text-[#059669]"></i>
+                        <span>Doctor's Details, Signature & Reg. Stamp</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fas fa-circle-check text-[#059669]"></i>
+                        <span>Patient Name & Prescription Date</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fas fa-circle-check text-[#059669]"></i>
+                        <span>Clear view of medicine names & dosages</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Centered Form Panel below it -->
+        <div class="max-w-2xl mx-auto animate-on-scroll slide-up">
+            <div class="bg-white dark:bg-[#0D2318] rounded-3xl p-8 border border-[#D1FAE5] dark:border-[#1A3D2A] shadow-lg">
+                <form id="rx-form" onsubmit="handleRxSubmit(event)" class="space-y-5">
+                    <div class="form-group">
+                        <label class="form-label" for="c-rx-name">Full Name</label>
+                        <input type="text" id="c-rx-name" class="form-input" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="c-rx-phone">Phone Number</label>
+                        <input type="tel" id="c-rx-phone" class="form-input" placeholder="+91 98400 XXXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="c-rx-address">Delivery Address</label>
+                        <input type="text" id="c-rx-address" class="form-input" placeholder="Full address for delivery">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="c-rx-type">Delivery Type</label>
+                        <select id="c-rx-type" class="form-input">
+                            <option value="home">Home Delivery</option>
+                            <option value="pickup">Store Pickup</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Prescription File (Image / PDF)</label>
+                        <label class="flex items-center gap-3 px-4 py-4 border-2 border-dashed border-[#D1FAE5] dark:border-[#1A3D2A] rounded-xl cursor-pointer hover:border-[#059669] transition-colors bg-[#F0FDF4] dark:bg-[#122B1E]">
+                            <i class="fas fa-cloud-arrow-up text-[#059669] text-2xl"></i>
+                            <div>
+                                <span id="file-label" class="text-sm text-neutral-500 dark:text-neutral-400 block">Click to upload or drag & drop</span>
+                                <span class="text-xs text-neutral-400">JPG, PNG, PDF up to 10 MB</span>
+                            </div>
+                            <input type="file" id="prescription-file" accept="image/*,.pdf" class="hidden">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="c-rx-notes">Notes</label>
+                        <textarea id="c-rx-notes" class="form-input" rows="2" placeholder="Any specific notes or requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="c-rx-submit">
+                        <i class="fas fa-paper-plane text-sm"></i> Submit Prescription
+                    </button>
+                </form>
+                <p id="rx-success-msg" class="hidden text-center text-[#059669] font-semibold mt-4">
+                    <i class="fas fa-circle-check mr-2"></i>Received! We'll call you within 30 minutes.
+                </p>
+            </div>
+        </div>
+
     </div>
 </section>
 
